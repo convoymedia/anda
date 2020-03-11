@@ -24,7 +24,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<!-- add required fonts -->
 <script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet"> 
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -42,9 +44,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="top-bar">
-		<div class="left"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
-		<div class="right"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+	<div id="topbar">
+		<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
+		<div class="alignright"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
 	</div>
 	<h1>
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
