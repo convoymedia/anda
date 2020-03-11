@@ -58,6 +58,15 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     margin-top:40px;
 }
 
-#access li {
+#access a {
+    color:#333333;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    font-size:20px;
+    margin-left:42px;
+}
+
+#access ul li {
     display:inline-block;
 }
