@@ -90,3 +90,11 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 #menu-main-navigation {
     margin-top:44px;
 }
+
+#menu-main-navigation a {
+    transform:all linear .2s;
+}
+
+#menu-main-navigation a:hover {
+    border-bottom: 1px solid black;
+}
