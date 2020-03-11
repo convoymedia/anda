@@ -98,3 +98,11 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 #menu-main-navigation a:hover {
     border-bottom: 1px solid black;
 }
+
+#footer {
+    position:relative;
+    width:100%;
+    background:#333333;
+    color:white;
+    padding-top:0px 77px;
+}
