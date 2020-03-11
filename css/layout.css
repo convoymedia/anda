@@ -130,6 +130,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     height:1px;
     background:white;
     content: ' ';
+    margin-bottom:10px;
 }
 
 .fifth a {
@@ -144,4 +145,9 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .fifth .widget-container {
     max-width:253px;
+    margin-bottom:41px;
+}
+
+.fifth p {
+    margin-bottom:41px;
 }
