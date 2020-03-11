@@ -63,7 +63,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 }
 
 .logo {
-    margin-left:-20px;q
+    margin-left:-20px;
 }
 
 #access li a {
@@ -77,4 +77,8 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 #access ul li {
     display:inline-block;
+}
+
+#menu-main-navigation {
+    margin-top:44px;
 }
