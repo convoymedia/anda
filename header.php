@@ -51,6 +51,9 @@
 		</div>
 	</div>
 
-	<div id="access" role="navigation">
-		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><img src="<?php echo get_header_image(); ?>" /></a>
+	<div id="access" class="container" role="navigation">
+		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><img src="<?php echo get_header_image(); ?>" />
+		
+		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+	</a>
 	</div><!-- #access -->
