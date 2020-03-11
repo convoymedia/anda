@@ -45,8 +45,10 @@
 
 <body <?php body_class(); ?>>
 	<div id="topbar">
-		<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
-		<div class="alignright"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+		<div class="container">
+			<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
+			<div class="alignright"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+		</div>
 	</div>
 	<h1>
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
