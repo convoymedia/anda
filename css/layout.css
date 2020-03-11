@@ -115,6 +115,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-family: 'Montserrat', sans-serif;
     font-size:18px;
     font-weight:400;
+    line-height:24px;
 }
 
 .fifth h3 {
@@ -128,9 +129,19 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     width:39px;
     height:1px;
     background:white;
+    content: ' ';
 }
 
 .fifth a {
     text-decoration:none;
     color:white;
+    transition:all linear 2s;
+}
+
+.fifth a:hover {
+    opacity:.7;
+}
+
+.fifth .widget-container {
+    max-width:253px;
 }
