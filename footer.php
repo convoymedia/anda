@@ -12,21 +12,21 @@
 ?>
 <div id="footer">
 	<div class="container">
-		<div class="fifth">
+		<ul class="fifth">
 			<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
-		</div>
-		<div class="fifth">
+		</ul>
+		<ul class="fifth">
 			<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
-		</div>
-		<div class="fifth">
+			</ul>
+		<ul class="fifth">
 			<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
-		</div>
-		<div class="fifth">
+		</ul>
+		<ul class="fifth">
 			<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
-		</div>
-		<div class="fifth">
+		</ul>
+		<ul class="fifth">
 			<?php dynamic_sidebar( 'fifth-footer-widget-area' ); ?>
-		</div>
+		</ul>
 		<br class="clear" />
 	</div>
 </div>
