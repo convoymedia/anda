@@ -57,6 +57,14 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     margin-left:10px;
 }
 
+#topbar .socials {
+    margin-top: -3px;
+}
+
+#topbar .socials a {
+    font-size: 24px;
+}
+
 #access {
     position:relative;
     margin-top:40px;

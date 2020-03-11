@@ -47,7 +47,7 @@
 	<div id="topbar">
 		<div class="container smaller">
 			<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
-			<div class="alignright"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+			<div class="alignright socials"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
 		</div>
 	</div>
 
