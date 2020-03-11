@@ -153,6 +153,10 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     margin-bottom:41px;
 }
 
+.fifth .fab {
+    font-size:25px;
+}
+
 #extra-footer {
     position:relative;
     display:block;
