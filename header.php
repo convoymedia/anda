@@ -52,6 +52,5 @@
 	</div>
 
 	<div id="access" role="navigation">
-		test
-		<?php echo get_header_image(); ?>
+		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><?php echo get_header_image(); ?></a>
 	</div><!-- #access -->
