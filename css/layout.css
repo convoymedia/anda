@@ -28,8 +28,10 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     background-color:#575756;
     color:white;
     font-family: 'Montserrat', sans-serif;
-    font-weight:400;
+    font-weight:600;
     font-size:17px;
+    padding-top: 12px;
+    box-sizing: border-box;
 }
 
 #topbar a {
