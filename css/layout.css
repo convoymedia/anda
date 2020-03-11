@@ -168,4 +168,5 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     text-align:center;
     height:72px;
     padding-top:26px;
+    box-sizing:border-box;
 }
