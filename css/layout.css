@@ -38,9 +38,17 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     color:white;
     text-decoration:none;
     opacity:1;
-    transition:all linear .5s;
+    transition:all linear .2s;
 }
 
 #topbar a:hover {
     opacity:.7;
+}
+
+#topbar .alignright {
+    text-align: right;
+}
+
+#topbar .alignright a {
+    margin-left:10px;
 }
