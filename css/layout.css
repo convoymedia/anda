@@ -21,6 +21,10 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     margin-right:auto;
 }
 
+.smaller {
+    max-width:1330px;
+}
+
 #topbar {
     position:relative;
     width:100%;
