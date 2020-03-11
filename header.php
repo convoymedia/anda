@@ -42,7 +42,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+	<div id="top-bar">
+		<div class="left"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
+		<div class="right"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+	</div>
 	<h1>
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 	</h1>
