@@ -14,6 +14,6 @@
 
 get_header(); ?>
 
-<div style="margin-bottom:300px"></div>
+<div style="margin-bottom:600px"></div>
 
 <?php get_footer(); ?>
