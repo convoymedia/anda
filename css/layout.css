@@ -57,3 +57,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     position:relative;
     margin-top:40px;
 }
+
+#access li {
+    display:inline-block;
+}
