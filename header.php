@@ -50,12 +50,9 @@
 			<div class="alignright"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
 		</div>
 	</div>
-	<h1>
-		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-	</h1>
-	<p><?php bloginfo( 'description' ); ?></p>
 
 	<div id="access" role="navigation">
+		<?php echo get_header_image(); ?>
 	  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 		<a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyten' ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a>
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
