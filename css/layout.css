@@ -152,3 +152,15 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 .fifth p {
     margin-bottom:41px;
 }
+
+#extra-footer {
+    position:relative;
+    display:block;
+    background:white;
+    color:#333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    font-weight:300;
+    text-align:center;
+    height:72px;
+}
