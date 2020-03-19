@@ -1,4 +1,3 @@
 <div class="text_left_image_right">
-    <h2><?php the_sub_field('title'); ?></h2>
-    <?php the_sub_field('style'); ?>
+    <img src="<?php echo get_template_directory_uri(); ?>/shades_grey_curved.png" />
 </div>
