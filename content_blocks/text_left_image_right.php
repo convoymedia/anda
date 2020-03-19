@@ -4,6 +4,8 @@
     <div class="overlay">
         <h2><?php the_sub_field("title"); ?></h2>
         <?php the_sub_field("content"); ?>
-        <a href="<?php the_sub_field("button_link"); ?>"><button><?php the_sub_field("button_title") ?></button></a>
+        <a href="<?php the_sub_field("button_link"); ?>">
+            <button><?php the_sub_field("button_title") ?></button>
+        </a>
     </div>
 </div>
