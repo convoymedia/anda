@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+[ppp]
 <?php include "content_blocks.php"; ?>
 
 <?php get_footer(); ?>
