@@ -225,8 +225,8 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     width:27%;
     height:100%;
     z-index:3;
-    margin-top:129px;
-    margin-left:327px;
+    margin-top: 6.8%;
+    margin-left: 17%;
 }
 
 .text_left_image_right .overlay h2 {
@@ -262,7 +262,8 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     background:#333333;
     outline: none;
     border: none;
-    padding: 7px 17px;
+    padding: 10px 45px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:35px;
 }
