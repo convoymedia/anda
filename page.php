@@ -14,6 +14,6 @@
 
 get_header(); ?>
 
-<div style="margin-bottom:600px"></div>
+<?php include "content_blocks.php"; ?>
 
 <?php get_footer(); ?>
