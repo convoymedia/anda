@@ -267,3 +267,24 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top:35px;
 }
+
+.two_column_image_text {
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    margin-top:83px;
+    margin-bottom:83px;
+}
+
+.two_column_image_text .column-holder {
+    display:flex;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.two_column_image_text .column-holder * {
+    max-width:100%;
+}
+
