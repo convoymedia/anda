@@ -193,6 +193,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .text_area img {
     display: inline-block;
+    float:none;
 }
 
 .text_area p {
