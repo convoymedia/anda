@@ -231,6 +231,8 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-family: 'Montserrat', sans-serif;
     font-size:45px;
     font-weight:600;
+    margin-top:129px;
+    margin-left:327px;
 }
 
 .text_left_image_right .overlay p {
