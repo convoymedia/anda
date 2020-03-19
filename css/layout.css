@@ -175,11 +175,15 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 /* text_area */
 
 .text_area {
+    position:relative;
+    display:block;
     margin-top:121px;
     margin-bottom:143px;
 }
 
 .text_area h2 {
+    display:block;
+    position:relative;
     font-family: 'Montserrat', sans-serif;
     font-size:24px;
     font-weight:300;
