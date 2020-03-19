@@ -172,7 +172,6 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 }
 
 /* content blocks */
-/* text_area */
 
 .text_area {
     position:relative;
@@ -198,4 +197,9 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .text_area p {
     text-align:center;
+}
+
+.text_left_image_right {
+    position:relative;
+    display:block;
 }
