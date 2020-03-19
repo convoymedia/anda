@@ -188,6 +188,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-weight:300;
     text-align:center;
     margin-bottom:75px;
+    color:#333333;
 }
 
 .text_area img {
@@ -233,6 +234,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-family: 'Montserrat', sans-serif;
     font-size:45px;
     font-weight:600;
+    color:#333333;
 }
 
 .text_left_image_right .overlay h2:after {
@@ -283,11 +285,12 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-size:45px;
     font-weight:600;
     margin-bottom:85px;
+    color:#333333;
 }
 
 .two_column_image_text .column-holder {
     display:flex;
-    width:50%;
+    width:70%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -310,6 +313,20 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     color:#E3E3E3;
 }
 
+.two_column_image_text .column-holder h3 img {
+    position: relative;
+    display: block;
+    margin-top: -185px;
+    margin-left: -10px;
+}
+
+.two_column_image_text .column-holder .blob-text {
+    position: absolute;
+    display: block;
+    margin-top: -130px;
+    margin-left: 30px;
+}
+
 .two_column_image_text .column-holder p {
     position:relative;
     width:100%;
@@ -319,6 +336,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-weight:300;
     color:#333333;
     line-height:24px;
+    margin-top:20px;
 }
 
 .two_column_image_text .column-holder button {
@@ -338,3 +356,42 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     max-width:100%;
 }
 
+.text_content_area {
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    margin-top:83px;
+    margin-bottom:83px;
+}
+
+.text_content_area h2 {
+    text-align:center;
+    color:#333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size:45px;
+    font-weight:600;
+    margin-bottom:85px;
+}
+
+.text_content_area .column-holder {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.text_content_area .column-holder div {
+    width:20%;
+}
+
+.text_content_area .column-holder div > * {
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:32px;
+    font-weight:400;
+}
