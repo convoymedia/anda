@@ -203,3 +203,16 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     position:relative;
     display:block;
 }
+
+.text_left_image_right .main-image {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.text_left_image_right .underlay-image {
+    position: absolute;
+    right: -14%;
+    top: 0px;
+    height: 99%;
+}
