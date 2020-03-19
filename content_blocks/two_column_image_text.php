@@ -4,13 +4,13 @@
         <div>
             <img src="<?php the_sub_field("left_image"); ?>" />
             <h3><?php the_sub_field("left_sub_title"); ?></h3>
-            <?php the_sub_field("left_text"); ?>
+            <p><?php the_sub_field("left_text"); ?></p>
             <a href="<?php the_sub_field("left_button_link"); ?>"><button><?php the_sub_field("left_button_title"); ?></button></a>
         </div>
         <div>
                 <img src="<?php the_sub_field("right_image"); ?>" />
                 <h3><?php the_sub_field("right_sub_title"); ?></h3>
-                <?php the_sub_field("right_text"); ?>
+                <p><?php the_sub_field("right_text"); ?></p>
                 <a href="<?php the_sub_field("right_button_link"); ?>"><button><?php the_sub_field("right_button_title"); ?></button></a>
             </div>
         </div>
