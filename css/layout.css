@@ -277,6 +277,14 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     margin-bottom:83px;
 }
 
+.two_column_image_text h2 {
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:45px;
+    font-weight:600;
+    margin-bottom:85px;
+}
+
 .two_column_image_text .column-holder {
     display:flex;
     width:50%;
