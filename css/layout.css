@@ -186,3 +186,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     text-align:center;
     margin-bottom:23px;
 }
+
+.text_area img {
+    display: inline-block;
+}
