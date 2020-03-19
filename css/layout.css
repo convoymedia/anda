@@ -202,6 +202,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 .text_left_image_right {
     position:relative;
     display:block;
+    overflow:hidden;
 }
 
 .text_left_image_right .main-image {
