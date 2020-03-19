@@ -260,4 +260,6 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-size:20px;
     font-weight:300;
     background:#333333;
+    padding-left:5px;
+    padding-right:5px;
 }
