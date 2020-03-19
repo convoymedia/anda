@@ -251,7 +251,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     font-family: 'Montserrat', sans-serif;
     font-size:20px;
     font-weight:300;
-    letter-spacing: 24px;
+    line-height: 24px;
 }
 
 .text_left_image_right .overlay a button {
