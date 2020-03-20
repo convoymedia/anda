@@ -133,6 +133,8 @@ function twentyten_setup() {
 			'description' => __( 'Starkers', 'twentyten' )
 		)
 	) );
+
+	add_image_size("shades_grey_curved", 705, 705, array('center', 'center'));
 }
 endif;
 
