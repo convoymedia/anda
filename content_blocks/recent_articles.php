@@ -3,7 +3,7 @@
     <div style="position:absolute;top:0px;left:0px;width:100%;height:75%;background:#333333;"></div>
     <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
         <h2><?php the_sub_field("title"); ?></h2>
-        <div class="recent-postss">
+        <div class="recent-posts">
             <?php
                 $amount = get_sub_field("amount_of_articles");
                 $recent_posts = wp_get_recent_posts(array(

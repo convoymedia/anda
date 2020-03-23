@@ -472,7 +472,8 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 }
 
 .recent-posts {
-    display: flex;
+    display:block;
+    overflow:hidden;
     width: 79%;
     margin-left: auto;
     margin-right: auto;
