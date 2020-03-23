@@ -27,14 +27,21 @@
 <!-- add required fonts -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-				
 <?php
 	wp_enqueue_script('jquery');
 	wp_head();
 ?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
+<script>
+	jQuery(document).ready(function($) {
+		$('.recent-posts').slick({
+  			infinite: true,
+  			slidesToShow: 4,
+  			slidesToScroll: 4
+		});
+	});
+</script>
 </head>
 
 <body <?php body_class(); ?>>
