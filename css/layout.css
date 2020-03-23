@@ -214,7 +214,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .text_left_image_right .underlay-image {
     position: absolute;
-    right: -14%;
+    right: 6%;
     top: 0px;
     height: 99%;
 }
@@ -290,13 +290,14 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .two_column_image_text .column-holder {
     display:flex;
-    width:70%;
+    width:59.9%;
     margin-left:auto;
     margin-right:auto;
 }
 
 .two_column_image_text .column-holder > div {
     margin:8px;
+    width:50%;
 }
 
 .two_column_image_text .column-holder .col-image {
@@ -376,7 +377,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .text_content_area .column-holder {
     display: flex;
-    width: 60%;
+    width: 59.9%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -402,6 +403,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     position:relative;
     display:block;
     overflow:hidden;
+    margin-bottom: -5px;
 }
 
 .image_left_text_right .main-image {
@@ -412,9 +414,9 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
 
 .image_left_text_right .underlay-image {
     position: absolute;
-    left: 8%;
+    left: 5%;
     top: 12%;
-    height: 79%;
+    height: 80%;
 }
 
 .image_left_text_right .overlay {
@@ -422,7 +424,7 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     top: 0px;
     right: 0px;
     width: 27%;
-    height: 100%;
+    height: auto;
     z-index: 3;
     margin-top: 13.8%;
     margin-right: 17%;
@@ -467,4 +469,96 @@ li#theme-switcher { background:#fff; border:10px solid red; padding:20px; positi
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top:35px;
+}
+
+.recent-posts {
+    display: flex;
+    width: 79%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: inherit;
+    justify-content: space-between;
+    flex-direction: row;
+    vertical-align:top;
+}
+
+.recent_articles h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 85px;
+    margin-top:116px;
+}
+
+.recent-posts > div {
+    background: #F2F2F2;
+    width: 22.59%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:24px;
+    line-height:30px;
+    font-weight:300;
+    text-decoration:none;
+}
+
+.recent-posts img {
+    width:100%;
+    height:auto;
+}
+
+.post-text {
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.post-text a {
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+    font-weight:300;
+    text-decoration: none;
+    color:#333333;
+}
+
+.cat {
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    line-height:22px;
+    font-style:italic;
+    font-weight:300;
+    color:#333333;
+}
+
+.read-time {
+    float:right;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    line-height:22px;
+    font-style:italic;
+    font-weight:300;
+    color:#333333;
+}
+
+.cat::after {
+    margin-top:8px;
+    margin-bottom:16px;
+    width:39px;
+    border-bottom:1px solid #3C3C3B;
+    content:' ';
+    display:block;
+    position:relative;
+}
+
+.post-text button {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background: transparent;
+    outline: none;
+    border: 1px solid #333333;
+    padding: 10px 35px;
+    border-radius: 20px;
+    margin-top: 35px;
 }

@@ -135,6 +135,10 @@ function twentyten_setup() {
 	) );
 
 	add_image_size("shades_grey_curved", 705, 705, array('center', 'center'));
+	add_image_size("two_column", 705, 726, array('center', 'center'));
+	add_image_size("shades_grey_solid_dark", 565, 495, array('center', 'center'));
+
+	add_image_size("recent_articles", 340, 225);
 }
 endif;
 
