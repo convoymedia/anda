@@ -1647,6 +1647,7 @@ button.white {
     max-width: 932px;
     margin-left: auto;
     margin-right: auto;
+    position:relative;
 }
 
 .blog-quote::before {
