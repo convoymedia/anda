@@ -53,7 +53,7 @@ get_header(); ?>
                 </div>
                 <?php the_content(); ?>
                 <div class="share">
-                    <h2>Share: <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i> <i class="fas fa-envelope"></i></h2>
+                    <h2>Share: <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i> <i class="fas fa-envelope"></i></h2>
                 </div>
             </div>
             <?php
