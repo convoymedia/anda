@@ -52,6 +52,9 @@ get_header(); ?>
                     <div class="author-who"><div>By <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?><br/><?php the_author_meta("description"); ?></div></div>
                 </div>
                 <?php the_content(); ?>
+                <div class="share">
+                    <h2>Share: <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i> <i class="fas fa-envelope"></i></h2>
+                </div>
             </div>
             <?php
         }
