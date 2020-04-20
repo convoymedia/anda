@@ -1639,3 +1639,9 @@ button.white {
     align-self: center;
     padding-left:10px;
 }
+
+.blog-quote {
+    background:#F2F2F2;
+    padding-left:70px;
+    padding-right:70px;
+}
