@@ -1687,5 +1687,14 @@ button.white {
 
 .inner-quote .from {
     padding-bottom:20px;
-    
+}
+
+.share {
+    text-align:center;
+}
+
+.share a {
+    color:#333333;
+    margin-left:10px;
+    margin-right:10px;
 }
