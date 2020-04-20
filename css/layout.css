@@ -1655,9 +1655,11 @@ button.white {
     content: ' ';
     width:59px;
     height:74px;
-    top:0px;
-    left:0px;
+    top: 100px;
+    left: -75px;
     background-image: url(../images/quote1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .blog-quote::after {
@@ -1666,9 +1668,11 @@ button.white {
     content: ' ';
     width:59px;
     height:74px;
-    bottom:0px;
-    right:0px;
+    bottom: 100px;
+    right: -75px;
     background-image: url(../images/quote2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
