@@ -53,7 +53,7 @@ get_header(); ?>
                 </div>
                 <?php the_content(); ?>
                 <div class="share">
-                    <h2>Share: <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo blog_info("name"). " " . get_the_title(). " " . get_permalink(); ?>" class="share-link"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?text=<?php the_permalink();?> text" class="social-share"><i class="fab fa-twitter"></i></a> <i class="fab fa-linkedin-in"></i> <i class="fas fa-envelope"></i></h2>
+                    <h2>Share: <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo blog_info("name"). " " . get_the_title($post->ID). " " . get_permalink($post->ID)); ?>" class="share-link"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?text=<?php the_permalink();?> text" class="social-share"><i class="fab fa-twitter"></i></a> <i class="fab fa-linkedin-in"></i> <i class="fas fa-envelope"></i></h2>
                 </div>
             </div>
             <?php
