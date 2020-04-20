@@ -1641,7 +1641,39 @@ button.white {
 }
 
 .blog-quote {
-    background:#F2F2F2;
-    padding-left:70px;
-    padding-right:70px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 932px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-quote::after {
+    display:block;
+    position:absolute;
+    content: ' ';
+    width:59px;
+    height:74px;
+    top:0px;
+    left:0px;
+    background-image: url(../images/quote1.png);
+}
+
+.blog-quote::after {
+    display:block;
+    position:absolute;
+    content: ' ';
+    width:59px;
+    height:74px;
+    bottom:0px;
+    right:0px;
+    background-image: url(../images/quote2.png);
+}
+
+
+.inner-quote {
+    background: #F2F2F2;
+    padding-left: 70px;
+    padding-right: 70px;
 }
