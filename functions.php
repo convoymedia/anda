@@ -532,7 +532,7 @@ function convoyQuote($params = array(), $content = "") {
 		'from' => ''
 	), $params));
 
-	return '<div class="blog-quote"><img src="'.get_template_directory_uri().'/images/quote-top.png" /><div class="from">'.$from.'</div><div class="quote">'.$content.'</div><img src="'.get_template_directory_uri().'/images/quote-bottom.png" /></div>';
+	return '</div><div class="blog-quote"><img src="'.get_template_directory_uri().'/images/quote-top.png" /><div class="from">'.$from.'</div><div class="quote">'.$content.'</div><img src="'.get_template_directory_uri().'/images/quote-bottom.png" /></div><div class="post-content">';
 }
 
 add_shortcode('quote', 'convoyQuote');
