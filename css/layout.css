@@ -1649,7 +1649,7 @@ button.white {
     margin-right: auto;
 }
 
-.blog-quote::after {
+.blog-quote::before {
     display:block;
     position:absolute;
     content: ' ';
