@@ -1648,6 +1648,7 @@ button.white {
     margin-left: auto;
     margin-right: auto;
     position:relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blog-quote::before {
@@ -1682,4 +1683,5 @@ button.white {
     background: #F2F2F2;
     padding-left: 70px;
     padding-right: 70px;
+    margin-top:20px;
 }
