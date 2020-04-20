@@ -18,118 +18,144 @@
  * @since Starkers 3.0
  */
 ?>
+<div class="blob-holder">
+	<div class="the-blob">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/articles-header.png" class="blob"/>
+	</div>
+	<h1>Articles</h1>
+</div>
+<div class="text_block">
+    <div class="text-content">
+        <h2><?php the_field("title", "option"); ?></h2>
+        <div class="text-holder">
+			<?php the_field("content", "option"); ?>
+		</div>
+    </div>
+</div>
+<div class="container">
+	<div class="featured-post">
+		<?php
+			$featured = get_field("featured_post", "option"); 
+		?>
+		<div class="featured-image"><img src="<?php echo get_the_post_thumbnail_url($featured->ID); ?>" /></div>
+		<div class="featured-text">
+			<div>
+				<div class="cat">
+					<?php
+						switch (get_field("type", $featured->ID)) {
+							case "video":
+								echo "Video";
+							break;
+							case "podcast":
+								echo "Podcast";
+							default:
+								echo get_cat_name(wp_get_post_categories($featured->ID)[0]); 
+							break;
+						}
+					?>
+				</div>
+				<div class="read-time">
+					<?php
+						switch (get_field("type", $featured->ID)) {
+							case "video":
+								$v = get_field("video_details", $featured->ID);
+								echo $v['video_duration'];
+							break;
+							case "podcast":
+								$v = get_field("podcast_details", $featured->ID);
+								echo $v['podcast_duration'];
+							default:
+							echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $featured->ID . '"]'); 
+							break;
+						}
+					?>
+				</div>
+				<br class="clear"/>
+				<h2><?php echo $featured->post_title; ?></h2>
+				<a href="<?php echo get_permalink($featured->ID); ?>"><button class="white">Read more</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="recent-posts main-posts">
+		<div class="the-posts">
+<?php 
+	while (have_posts()) {
+		the_post();
+		?>
+			<div class="post">
+				<a href="<?php echo get_permalink($post->ID) ?>">
+					<?php echo get_the_post_thumbnail($post->ID, "recent_articles"); ?>
+				</a>
+				
+				<div class="post-text">
+					<div class="cat">
+						<?php
+							switch (get_field("type")) {
+								case "video":
+									echo "Video";
+								break;
+								case "podcast":
+									echo "Podcast";
+								default:
+									echo get_cat_name(wp_get_post_categories($post->ID)[0]); 
+								break;
+							}
+						?>
+					</div>
+					<div class="read-time">
+						<?php
+							switch (get_field("type")) {
+								case "video":
+									$v = get_field("video_details");
+									echo $v['video_duration'];
+								break;
+								case "podcast":
+									$v = get_field("podcast_details");
+									echo $v['podcast_duration'];
+								default:
+								echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $post->ID . '"]'); 
+								break;
+							}
+						?>
+					</div>
+					<br class="clear"/>
+					<?php
+						$max_len = 55;
+						$title = explode(" ", get_the_title($post->ID));
+						$temp = "";
 
-<?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-		<?php next_posts_link( __( '&larr; Older posts', 'twentyten' ) ); ?>
-		<?php previous_posts_link( __( 'Newer posts &rarr;', 'twentyten' ) ); ?>
-<?php endif; ?>
-
-<?php /* If there are no posts to display, such as an empty archive page */ ?>
-<?php if ( ! have_posts() ) : ?>
-		<h1><?php _e( 'Not Found', 'twentyten' ); ?></h1>
-		<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyten' ); ?></p>
-		<?php get_search_form(); ?>
-
-<?php endif; ?>
-
-<?php
-	/* Start the Loop.
-	 *
-	 * In Twenty Ten we use the same loop in multiple contexts.
-	 * It is broken into three main parts: when we're displaying
-	 * posts that are in the gallery category, when we're displaying
-	 * posts in the asides category, and finally all other posts.
-	 *
-	 * Additionally, we sometimes check for whether we are on an
-	 * archive page, a search page, etc., allowing for small differences
-	 * in the loop on each template without actually duplicating
-	 * the rest of the loop that is shared.
-	 *
-	 * Without further ado, the loop:
-	 */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
-
-<?php /* How to display posts in the Gallery category. */ ?>
-
-	<?php if ( in_category( _x('gallery', 'gallery category slug', 'twentyten') ) ) : ?>
-			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php twentyten_posted_on(); ?>
-
-<?php if ( post_password_required() ) : ?>
-				<?php the_content(); ?>
-<?php else : ?>
-<?php
-	$images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
-	$total_images = count( $images );
-	$image = array_shift( $images );
-	$image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );
-?>
-					<a href="<?php the_permalink(); ?>"><?php echo $image_img_tag; ?></a>
-
-				<p><?php printf( __( 'This gallery contains <a %1$s>%2$s photos</a>.', 'twentyten' ),
-						'href="' . get_permalink() . '" title="' . sprintf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark"',
-						$total_images
-					); ?></p>
-
-				<?php the_excerpt(); ?>
-<?php endif; ?>
-
-				<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'twentyten'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'twentyten' ); ?>"><?php _e( 'More Galleries', 'twentyten' ); ?></a>
-				|
-				<?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '|', '' ); ?>
-
-<?php /* How to display posts in the asides category */ ?>
-
-	<?php elseif ( in_category( _x('asides', 'asides category slug', 'twentyten') ) ) : ?>
-
-		<?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
-			<?php the_excerpt(); ?>
-		<?php else : ?>
-			<?php the_content( __( 'Continue reading &rarr;', 'twentyten' ) ); ?>
-		<?php endif; ?>
-
-				<?php twentyten_posted_on(); ?>
-				|
-				<?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '| ', '' ); ?>
-
-<?php /* How to display all other posts. */ ?>
-
-	<?php else : ?>
-			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php twentyten_posted_on(); ?>
-
-	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
-			<?php the_excerpt(); ?>
-	<?php else : ?>
-			<?php the_content( __( 'Continue reading &rarr;', 'twentyten' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
-	<?php endif; ?>
-
-				<?php if ( count( get_the_category() ) ) : ?>
-					<?php printf( __( 'Posted in %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					|
-				<?php endif; ?>
-				<?php
-					$tags_list = get_the_tag_list( '', ', ' );
-					if ( $tags_list ):
-				?>
-					<?php printf( __( 'Tagged %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-					|
-				<?php endif; ?>
-				<?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '| ', '' ); ?>
-
-		<?php comments_template( '', true ); ?>
-
-	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
-
-<?php endwhile; // End the loop. Whew. ?>
-
+						foreach ($title as $word) {
+							if (strlen(trim($temp)) + strlen($word) <= $max_len) {
+								$temp = $temp . " " . $word;
+								//echo (strlen(trim($temp))). " ";
+							}
+							else {
+								//echo strlen($temp)+ strlen($word);
+								$temp = $temp . "...";
+								break;
+							}
+						}
+					?>
+					<a href="<?php echo get_permalink($post->ID) ?>"><?php echo $temp; ?></a>
+					<a href="<?php echo get_permalink($post->ID) ?>" class="button"><button>Read More</button></a>
+				</div>
+			</div>
+			<?php
+		}
+	?>
+		</div>
+		<div style="width:100%;text-align:center>">
+		<?php echo do_shortcode('[ajax-loadmore-button]'); ?>
+		</div>
+	</div>
+</div>
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-				<?php next_posts_link( __( '&larr; Older posts', 'twentyten' ) ); ?>
+				<div class="next">
 				<?php previous_posts_link( __( 'Newer posts &rarr;', 'twentyten' ) ); ?>
+</div>
 <?php endif; ?>
+
+<div class="form">
+    <?php echo do_shortcode('[contact-form-7 id="128"]') ?>
+</div>

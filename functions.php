@@ -135,8 +135,15 @@ function twentyten_setup() {
 	) );
 
 	add_image_size("shades_grey_curved", 705, 705, array('center', 'center'));
+	add_image_size("dark_grey_solid", 726, 682, array('center', 'center'));
 	add_image_size("two_column", 705, 726, array('center', 'center'));
 	add_image_size("shades_grey_solid_dark", 565, 495, array('center', 'center'));
+	add_image_size("blob1", 645, 518, array('center', 'center'));
+	add_image_size("blob3", 850, 518, array('center', 'center'));
+	add_image_size("blob4", 770, 518, array('center', 'center'));
+	add_image_size("blob5", 886, 518, array('center', 'center'));
+	add_image_size("white_solid", 650, 630, array('center', 'center'));
+	add_image_size("light_grey_solid", 731, 551, array('center', 'center'));
 
 	add_image_size("recent_articles", 340, 225);
 }
@@ -260,7 +267,7 @@ add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
  * @return string "Continue Reading" link
  */
 function twentyten_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+	return ' <a href="'. get_permalink() . '">' . __( '<button>View</button>', 'twentyten' ) . '</a>';
 }
 
 /**

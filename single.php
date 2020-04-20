@@ -9,36 +9,57 @@
 
 get_header(); ?>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'twentyten' ) . ' %title' ); ?>
-					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '' ); ?>
-
-					<h1><?php the_title(); ?></h1>
-
-						<?php twentyten_posted_on(); ?>
-
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
-
-<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 60 ) ); ?>
-							<h2><?php printf( esc_attr__( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
-							<?php the_author_meta( 'description' ); ?>
-							<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-								<?php printf( __( 'View all posts by %s &rarr;', 'twentyten' ), get_the_author() ); ?>
-							</a>
-<?php endif; ?>
-
-						<?php twentyten_posted_in(); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
-
-				<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'twentyten' ) . ' %title' ); ?>
-				<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '' ); ?>
-
-				<?php comments_template( '', true ); ?>
-
-<?php endwhile; // end of the loop. ?>
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php 
+	if (have_posts()) {
+		while ( have_posts() ) {
+            the_post(); 
+            ?>
+            <div class="blob-holder blog-header">
+                <div class="the-blob">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/post-header.png" class="blob" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);"/>
+                </div>
+                
+            </div>
+            <div class="post-content">
+                <h1><?php the_title(); ?></h1>
+                <div class="meta">
+                    <?php 
+                        the_date(); 
+                        echo " | ";
+                        $cats = wp_get_post_categories(get_the_ID()); 
+                        foreach ($cats as $cat) {
+                            echo ' <a href="' . get_category_link($cat) . '">' . get_cat_name($cat) . '</a> '; 
+                        }
+                        echo " | ";
+                        
+                        switch (get_field("type")) {
+							case "video":
+								$v = get_field("video_details");
+								echo $v['video_duration'];
+							break;
+							case "podcast":
+								$v = get_field("podcast_details");
+								echo $v['podcast_duration'];
+							default:
+							echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . get_the_ID() . '"]'); 
+							break;
+						}
+					?>
+                </div>
+                <div class="post-author">
+                    <?php $author = get_the_author_meta($post->post_author); print_r($author); ?>
+                    <div class="author-image"><img src="<?php echo get_template_directory_uri(); ?>/images/author-cutout.png" style="background-image:url(<?php echo get_avatar_url($post->post_author); ?>)" /></div>
+                    <div class="author-who"><div>By <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?><br/><?php the_author_meta("description"); ?></div></div>
+                </div>
+                <?php the_content(); ?>
+            </div>
+            <?php
+        }
+    }
+?>
+<div class="form">
+    <?php echo do_shortcode('[contact-form-7 id="128"]') ?>
+</div>
+<?php
+	get_footer(); 
+?>

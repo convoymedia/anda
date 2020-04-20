@@ -35,10 +35,19 @@
 <script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
 <script>
 	jQuery(document).ready(function($) {
-		$('.recent-posts').slick({
+		$('.scroll-posts').slick({
   			infinite: true,
   			slidesToShow: 4,
-  			slidesToScroll: 4
+  			slidesToScroll: 4,
+			nextArrow: '<div class="slick-next"></div>',
+        	prevArrow: '<div class="slick-prev"></div>'
+		});
+
+		$('.quotes').slick({
+  			infinite: true,
+			speed: 500,
+			autoplay:true,
+			arrows:false
 		});
 	});
 </script>
