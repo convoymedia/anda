@@ -524,3 +524,20 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+function convoyQuote($params = array(), $content = "") {
+
+	// default parameters
+	extract(shortcode_atts(array(
+		'from' => ''
+	), $params));
+
+	?>
+	<div class="blog-quote">
+		<div class="from"><?php echo $from; ?></div>
+		<div class="quote"><?php echo $content; ?></div>
+	</div>
+	<?php
+}
+
+add_shortcode('quote', 'convoyQuote');
