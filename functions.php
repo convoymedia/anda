@@ -532,12 +532,7 @@ function convoyQuote($params = array(), $content = "") {
 		'from' => ''
 	), $params));
 
-	?>
-	<div class="blog-quote">
-		<div class="from"><?php echo $from; ?></div>
-		<div class="quote"><?php echo $content; ?></div>
-	</div>
-	<?php
+	return '<div class="blog-quote"><div class="from">'.$from.'</div><div class="quote">'.$content.'</div></div>';
 }
 
 add_shortcode('quote', 'convoyQuote');
