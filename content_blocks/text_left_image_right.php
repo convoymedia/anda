@@ -78,7 +78,7 @@
             case "dark_grey_curved":
                 $image = wp_get_attachment_image_src(get_sub_field("image"), "dark_grey_curved"); 
                 ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/curved-top.png" style="width:100%;height:auto;" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/curved-top.png" style="width:100%;height:auto;;display:block" />
                 <div class="flex-wrap">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/dark-blob2.png" style="background-image:url(<?php echo $image[0]; ?>);" />
                     <div class="overlay">
