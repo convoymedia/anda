@@ -1732,6 +1732,7 @@ button.white {
     width:100%;
     padding:15px 10px 15px 10px;
     border-radius:15px;
+    background-color:#333333;
 }
 
 .filter a {
