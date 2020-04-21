@@ -35,6 +35,7 @@
 	</div>
 	<h1>Articles</h1>
 </div>
+<?php if ( !is_front_page() && is_home() ) { ?>
 <div class="text_block">
     <div class="text-content"> 
         <h2><?php the_field("title", "option"); ?></h2>
@@ -43,6 +44,7 @@
 		</div>
     </div>
 </div>
+<?php } ?>
 <div class="container">
 	<div class="filter">
 		<div>
