@@ -45,15 +45,17 @@
 </div>
 <div class="container">
 	<div class="filter">
+		<div>
 		<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">All</a>
-		<?php
-			$terms = get_terms( 'category', array(
-				'hide_empty' => false,
-			) ); 
-			foreach ($terms as $term) {
-				echo '<a href="' . get_category_link($term->term_id) . '">' . $term->name . '</a>';
-			}
-		?>
+			<?php
+				$terms = get_terms( 'category', array(
+					'hide_empty' => false,
+				) ); 
+				foreach ($terms as $term) {
+					echo '<a href="' . get_category_link($term->term_id) . '">' . $term->name . '</a>';
+				}
+			?>
+		</div>
 		<ul class="filter-widgets">
 			<?php dynamic_sidebar("blog-filter-widget-area"); ?>
 		</ul>
