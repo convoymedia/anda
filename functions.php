@@ -400,6 +400,16 @@ function twentyten_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name' => __( 'Blog Filter', 'twentyten' ),
+		'id' => 'blog-filter-widget-area',
+		'description' => __( 'Widget area for top bar', 'twentyten' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
 		'name' => __( 'First Footer Widget Area', 'twentyten' ),
 		'id' => 'first-footer-widget-area',
 		'description' => __( 'The first footer widget area', 'twentyten' ),
