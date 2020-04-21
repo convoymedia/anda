@@ -1790,6 +1790,7 @@ button.white {
 .blog h3, .search h3, .category h3 {
     font-size:28px;
     font-family: 'Montserrat', sans-serif;
-    margin-top:10px;
-    margin-bottom:10px;
+    font-weight:300;
+    margin-top:20px;
+    margin-bottom:20px;
 }
