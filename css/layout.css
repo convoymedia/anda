@@ -1698,3 +1698,11 @@ button.white {
     margin-left:10px;
     margin-right:10px;
 }
+
+.dark_grey_curved {
+    background-color:#575756;
+}
+
+.dark_grey_curved .image {
+    
+}
