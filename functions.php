@@ -144,6 +144,7 @@ function twentyten_setup() {
 	add_image_size("blob5", 886, 518, array('center', 'center'));
 	add_image_size("white_solid", 650, 630, array('center', 'center'));
 	add_image_size("light_grey_solid", 731, 551, array('center', 'center'));
+	add_image_size("dark_grey_curved", 737, 546, array('center', 'center'));
 
 	add_image_size("recent_articles", 340, 225);
 }

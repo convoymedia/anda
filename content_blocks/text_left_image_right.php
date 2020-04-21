@@ -74,6 +74,25 @@
                 <br class="clear" />
             <?php
             break;
+
+            case "dark_grey_curved":
+                $image = wp_get_attachment_image_src(get_sub_field("image"), "dark_grey_curved"); 
+                ?>
+                <div class="image" style="background-image:url(<?php echo $image[0]; ?>);">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/dark_blob2.png" style="width:100%;height:100%;" />
+                </div>
+                <div class="overlay">
+                    <h2><?php the_sub_field("title"); ?></h2>
+                    <?php the_sub_field("content"); ?>
+                    <?php if (get_sub_field("button_link")) { ?>
+                    <a href="<?php the_sub_field("button_link"); ?>">
+                        <button><?php the_sub_field("button_title") ?></button>
+                    </a>
+                    <?php } ?>
+                </div>
+                <br class="clear" />
+            <?php
+            break;
         }
         ?>
 </div>
