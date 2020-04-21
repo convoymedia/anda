@@ -39,7 +39,7 @@
 				'hide_empty' => false,
 			) ); 
 			foreach ($terms as $term) {
-				echo '<a href="' . get_category_link($term->term_id) . ''">' . $term->name . '</a>';
+				echo '<a href="' . get_category_link($term->term_id) . '">' . $term->name . '</a>';
 			}
 		?>
 	</div>
