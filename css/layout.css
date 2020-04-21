@@ -1727,3 +1727,14 @@ button.white {
 .dark_grey_curved .overlay h2::after {
     border-bottom: 2px solid white;
 }
+
+.filter {
+    width:100%;
+    padding:15px 10px 15px 10px;
+    border-radius:15px;
+}
+
+.filter a {
+    color:white;
+    text-decoration:none;
+}
