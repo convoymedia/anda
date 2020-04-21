@@ -18,6 +18,17 @@
  * @since Starkers 3.0
  */
 ?>
+<script>
+	jQuery(document).ready(function($) {
+		$(".filter a").each(function() {
+        if (this.href == window.location.href) {
+            $(this).addClass("active");
+        }
+    });
+});
+	});
+</script>
+
 <div class="blob-holder">
 	<div class="the-blob">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/articles-header.png" class="blob"/>
