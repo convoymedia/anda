@@ -33,6 +33,14 @@
     </div>
 </div>
 <div class="container">
+	<div class="filter">
+		<?php
+			$terms = get_terms( 'category', array(
+				'hide_empty' => false,
+			) ); 
+			print_r($terms);
+		?>
+	</div>
 	<div class="featured-post">
 		<?php
 			$featured = get_field("featured_post", "option"); 
