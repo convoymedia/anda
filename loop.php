@@ -43,6 +43,7 @@
 			}
 		?>
 	</div>
+	<h2>Featured</h2>
 	<div class="featured-post">
 		<?php
 			$featured = get_field("featured_post", "option"); 
