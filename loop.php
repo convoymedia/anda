@@ -21,11 +21,10 @@
 <script>
 	jQuery(document).ready(function($) {
 		$(".filter a").each(function() {
-        if (this.href == window.location.href) {
-            $(this).addClass("active");
-        }
-    });
-});
+			if (this.href == window.location.href) {
+				$(this).addClass("active");
+			}
+		});
 	});
 </script>
 
