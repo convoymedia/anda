@@ -1794,3 +1794,11 @@ button.white {
     font-weight:300;
     margin-bottom:20px;
 }
+
+.blog > .text_blob {
+    padding-top:0px;
+}
+
+.blog .blob-holder, .search .blob-holder, .category .blob-holder {
+    margin-bottom:100px;
+}
