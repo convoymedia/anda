@@ -36,7 +36,7 @@
 	<h1>Articles</h1>
 </div>
 <div class="text_block">
-    <div class="text-content">
+    <div class="text-content"> 
         <h2><?php the_field("title", "option"); ?></h2>
         <div class="text-holder">
 			<?php the_field("content", "option"); ?>
