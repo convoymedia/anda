@@ -1782,3 +1782,14 @@ button.white {
     justify-content: right;
     flex-direction:row;
 }
+
+.filter-widgets li {
+    margin-left:20px;
+}
+
+.blog h3, .search h3, .category h3 {
+    font-size:28px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:10px;
+    margin-bottom:10px;
+}
