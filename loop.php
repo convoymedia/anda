@@ -54,7 +54,9 @@
 				echo '<a href="' . get_category_link($term->term_id) . '">' . $term->name . '</a>';
 			}
 		?>
-		<?php dynamic_sidebar("blog-filter-widget-area"); ?>
+		<ul class="filter-widgets">
+			<?php dynamic_sidebar("blog-filter-widget-area"); ?>
+		</ul>
 	</div>
 	<h3>Featured</h3>
 	<div class="featured-post">

@@ -1749,3 +1749,32 @@ button.white {
 .filter a.active {
     font-weight:600;
 }
+
+#searchform {
+    border-bottom: 1px solid #aeaeae;
+    padding-bottom: 5px;
+}
+
+#searchsubmit {
+    border: none;
+    box-shadow: none;
+    padding: 0px !important;
+    font-size: 16px !important;
+}
+
+#s {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.filter-widgets {
+    display:flex;
+    position:relative;
+    justify-content: right;
+    flex-direction:row;
+}
