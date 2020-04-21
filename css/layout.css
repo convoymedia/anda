@@ -1717,4 +1717,13 @@ button.white {
     z-index: 3;
     margin-top: unset;
     margin-left: unset;
+    color:white;
+}
+
+.dark_grey_curved .overlay h2 {
+    color:white;
+}
+
+.dark_grey_curved .overlay h2::after {
+    border-bottom: 2px solid white;
 }
