@@ -33,7 +33,19 @@
 	<div class="the-blob">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/articles-header.png" class="blob"/>
 	</div>
-	<h1 >Articles</h1>
+	<?php 
+		$cat_id = get_query_var('cat');
+		if ( !is_front_page() && is_home() ) {
+			?><h1>Articles</h1><?php
+		}
+		else if ($cat_id) {
+			?><h1>Category: <?php echo get_cat_name($cat_id); ?></h1><?php
+		}
+		else {
+			?><h1>Search: <?php echo $_GET['s']; ?></h1><?php
+		}
+	?>
+	
 </div>
 <?php if ( !is_front_page() && is_home() ) { ?>
 <div class="text_block">
