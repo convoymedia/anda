@@ -1699,7 +1699,7 @@ button.white {
     margin-right:10px;
 }
 
-.dark_grey_curved {
+.dark_grey_curved .flex-wrap {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
