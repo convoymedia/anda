@@ -33,7 +33,7 @@
 	<div class="the-blob">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/articles-header.png" class="blob"/>
 	</div>
-	<h1>Articles</h1>
+	<h1 >Articles</h1>
 </div>
 <?php if ( !is_front_page() && is_home() ) { ?>
 <div class="text_block">
