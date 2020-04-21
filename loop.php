@@ -38,7 +38,9 @@
 			$terms = get_terms( 'category', array(
 				'hide_empty' => false,
 			) ); 
-			print_r($terms);
+			foreach ($terms as $term) {
+				echo '<a href="' . get_category_link($term->term_id) . ''">' . $term->name . '</a>';
+			}
 		?>
 	</div>
 	<div class="featured-post">
