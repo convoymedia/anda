@@ -1700,9 +1700,21 @@ button.white {
 }
 
 .dark_grey_curved {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
     background-color:#575756;
 }
 
-.dark_grey_curved .image {
-    
+.dark_grey_curved .overlay {
+    width:35%;
+    position: relative;
+    top: unset;
+    left: unset;
+    height: unset;
+    z-index: 3;
+    margin-top: unset;
+    margin-left: unset;
 }
