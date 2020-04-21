@@ -60,50 +60,52 @@
 			<?php dynamic_sidebar("blog-filter-widget-area"); ?>
 		</ul>
 	</div>
-	<h3>Featured</h3>
-	<div class="featured-post">
-		<?php
-			$featured = get_field("featured_post", "option"); 
-		?>
-		<div class="featured-image"><img src="<?php echo get_the_post_thumbnail_url($featured->ID); ?>" /></div>
-		<div class="featured-text">
-			<div>
-				<div class="cat">
-					<?php
-						switch (get_field("type", $featured->ID)) {
-							case "video":
-								echo "Video";
-							break;
-							case "podcast":
-								echo "Podcast";
-							default:
-								echo get_cat_name(wp_get_post_categories($featured->ID)[0]); 
-							break;
-						}
-					?>
+	<?php if ( !is_front_page() && is_home() ) { ?>
+		<h3>Featured</h3>
+		<div class="featured-post">
+			<?php
+				$featured = get_field("featured_post", "option"); 
+			?>
+			<div class="featured-image"><img src="<?php echo get_the_post_thumbnail_url($featured->ID); ?>" /></div>
+			<div class="featured-text">
+				<div>
+					<div class="cat">
+						<?php
+							switch (get_field("type", $featured->ID)) {
+								case "video":
+									echo "Video";
+								break;
+								case "podcast":
+									echo "Podcast";
+								default:
+									echo get_cat_name(wp_get_post_categories($featured->ID)[0]); 
+								break;
+							}
+						?>
+					</div>
+					<div class="read-time">
+						<?php
+							switch (get_field("type", $featured->ID)) {
+								case "video":
+									$v = get_field("video_details", $featured->ID);
+									echo $v['video_duration'];
+								break;
+								case "podcast":
+									$v = get_field("podcast_details", $featured->ID);
+									echo $v['podcast_duration'];
+								default:
+								echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $featured->ID . '"]'); 
+								break;
+							}
+						?>
+					</div>
+					<br class="clear"/>
+					<h2><?php echo $featured->post_title; ?></h2>
+					<a href="<?php echo get_permalink($featured->ID); ?>"><button class="white">Read more</button></a>
 				</div>
-				<div class="read-time">
-					<?php
-						switch (get_field("type", $featured->ID)) {
-							case "video":
-								$v = get_field("video_details", $featured->ID);
-								echo $v['video_duration'];
-							break;
-							case "podcast":
-								$v = get_field("podcast_details", $featured->ID);
-								echo $v['podcast_duration'];
-							default:
-							echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $featured->ID . '"]'); 
-							break;
-						}
-					?>
-				</div>
-				<br class="clear"/>
-				<h2><?php echo $featured->post_title; ?></h2>
-				<a href="<?php echo get_permalink($featured->ID); ?>"><button class="white">Read more</button></a>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 	<div class="recent-posts main-posts">
 		<div class="the-posts">
 <?php 
