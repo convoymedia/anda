@@ -22,6 +22,7 @@
 	jQuery(document).ready(function($) {
 		$(".filter a").each(function() {
 			if (this.href == window.location.href) {
+				console.log(this.href)
 				$(this).addClass("active");
 			}
 		});
