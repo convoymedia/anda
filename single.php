@@ -74,27 +74,27 @@ get_header(); ?>
 							'post_status' => 'publish' ,
 							'exclude' => array(get_the_ID()),
 							'orderby' => 'rand'
-                        ), $output='ARRAY_A');
+                        ));
                         foreach ($recent_posts as $post) {
                             ?>
                             <div class="post">
-                                <a href="<?php echo get_permalink($post['ID']) ?>">
-                                    <?php echo get_the_post_thumbnail($post['ID'], "recent_articles"); ?>
+                                <a href="<?php echo get_permalink($post->ID) ?>">
+                                    <?php echo get_the_post_thumbnail($post->ID, "recent_articles"); ?>
                                 </a>
                                 
                                 <div class="post-text">
                                     <div class="cat">
                                         <?php
-                                            echo get_cat_name(wp_get_post_categories($post['ID'])[0]); 
+                                            echo get_cat_name(wp_get_post_categories($post->ID)[0]); 
                                         ?>
                                     </div>
                                     <div class="read-time">
-                                        <?php echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $post['ID'] . '"]'); ?>
+                                        <?php echo do_shortcode('[rt_reading_time postfix="mins read" postfix_singular="min read" post_id="' . $post->ID . '"]'); ?>
                                     </div>
                                     <br class="clear"/>
                                     <?php
                                         $max_len = 55;
-                                        $title = explode(" ", get_the_title($post['ID']));
+                                        $title = explode(" ", get_the_title($post->ID));
                                         $temp = "";
 
                                         foreach ($title as $word) {
@@ -109,8 +109,8 @@ get_header(); ?>
                                             }
                                         }
                                     ?>
-                                    <a href="<?php echo get_permalink($post['ID']) ?>"><?php echo $temp; ?></a>
-                                    <a href="<?php echo get_permalink($post['ID']) ?>" class="button"><button>Read More</button></a>
+                                    <a href="<?php echo get_permalink($post->ID) ?>"><?php echo $temp; ?></a>
+                                    <a href="<?php echo get_permalink($post->ID) ?>" class="button"><button>Read More</button></a>
                                 </div>
                             </div>
                             <?php
