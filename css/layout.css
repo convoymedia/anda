@@ -1892,3 +1892,7 @@ button.white {
     content:' ';
     cursor:pointer;
 }
+
+.get-in-touch {
+    background-image:url(../images/getintouch.png);
+}
