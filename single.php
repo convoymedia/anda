@@ -16,7 +16,7 @@ get_header(); ?>
                 $(this).addClass("clicked");
             }
         })
-    });typo file_exists
+    });
 </script>
 <?php 
 	if (have_posts()) {
