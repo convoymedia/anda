@@ -8,7 +8,16 @@
  */
 
 get_header(); ?>
-
+<script>
+    jQuery(document.ready(function($) {
+        $(".iframe-container").click(function(event) {
+            event.preventDefault();
+            if (!$(this).hasClass("clicked")) {
+                $(this).addClass("clicked");
+            }
+        })
+    }))
+</script>
 <?php 
 	if (have_posts()) {
 		while ( have_posts() ) {

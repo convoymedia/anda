@@ -1869,6 +1869,10 @@ button.white {
 	height: 100%;
 }
 
+.iframe-container.clicked::after {
+    display:none;
+}
+
 .iframe-container::after {
     display:block;
     position:absolute;
@@ -1881,4 +1885,5 @@ button.white {
     background-position:center center;
     background-repeat:no-repeat;
     content:' ';
+    cursor:pointer;
 }
