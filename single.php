@@ -62,7 +62,7 @@ get_header(); ?>
 ?>
 
 <div class="recent_articles" style="position:relative;display:block">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/inv-holder.png" style="width:100%;height:auto" ?>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/inv-holder.png" />
     <div style="position:absolute;top:0px;left:0px;width:100%;height:75%;background:#333333;"></div>
         <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
             <h2>You may also like</h2>
