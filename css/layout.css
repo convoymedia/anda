@@ -1922,3 +1922,7 @@ button.white {
     font-weight: 800;
     font-size: 20px;
 }
+
+.get_in_touch_header > img {
+    width:100%;height:auto;
+}
