@@ -1835,3 +1835,8 @@ button.white {
     background-size: cover;
     overflow: hidden;
 }
+
+.more-author a {
+    text-decoration:none;
+    color:black;
+}
