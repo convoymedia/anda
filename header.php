@@ -64,6 +64,6 @@
 	<div id="access" class="container smaller" role="navigation">
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo alignleft"><img src="<?php echo get_header_image(); ?>" /></a>
 		<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
-		<div class="get-in-touch">Get in touch</div>
+		<div class="get-in-touch"><div>Get in touch</div></div>
 		<br class="clear" />
 	</div><!-- #access -->
