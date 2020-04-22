@@ -1913,3 +1913,11 @@ button.white {
     font-size: 20px;
     margin-left: 42px;
 }
+
+.get-in-touch a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
