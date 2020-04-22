@@ -47,7 +47,7 @@ get_header(); ?>
 					?>
                 </div>
                 <div class="post-author">
-                    <?php $author = get_the_author_meta($post->post_author); print_r($author); ?>
+                    <?php $author = get_the_author_meta($post->post_author); ?>
                     <div class="author-image"><img src="<?php echo get_template_directory_uri(); ?>/images/author-cutout.png" style="background-image:url(<?php echo get_avatar_url($post->post_author); ?>)" /></div>
                     <div class="author-who"><div>By <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?><br/><?php the_author_meta("description"); ?></div></div>
                 </div>
@@ -59,7 +59,7 @@ get_header(); ?>
             </div>
             <div class="view-more-author">
                 <div class="author-image"><img src="<?php echo get_template_directory_uri(); ?>/images/author-cutout.png" style="background-image:url(<?php echo get_avatar_url($post->post_author); ?>)" /></div>
-                <div class="more-author">View more articles by <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?></a></div>
+                <div class="more-author"><a href="<?php echo get_author_posts_url($post->post_author); ?>">View more articles by <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?></a></div>
             </div>
             <?php
         }
