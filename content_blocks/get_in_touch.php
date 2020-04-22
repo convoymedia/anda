@@ -1,4 +1,4 @@
-<div class="get_in_touch">
+<div class="get_in_touch" style="background-color:<?php the_sub_field("background_colour"); ?>">
     <div class="touch-holder">
         <img src="<?php the_sub_field("image"); ?>" />
         <div class="form-holder">
