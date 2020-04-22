@@ -12,6 +12,14 @@ get_header(); ?>
     jQuery(document).ready(function($) {
         $(".iframe-container").click(function(event) {
             event.preventDefault();
+            src = $(this).children("div").children("iframe").attr("src");
+            if (src.includes("?")) {
+                src = src + "&autoplay=1";
+            }
+            else {
+                src = src + "?autoplay=1";
+            }
+            $(this).children("div").children("iframe").attr("src", src);
             if (!$(this).hasClass("clicked")) {
                 $(this).addClass("clicked");
             }
@@ -66,6 +74,10 @@ get_header(); ?>
                         case "video":
                             $v = get_field("video_details");
 							?></div><div class="iframe-container"><div><?php echo $v['video_url']; ?></div></div><div class="post-content"><?php
+                        break;
+                        case "podcast":
+                            $v = get_field("video_details");
+                            ?><div class="podcast-container"><?php echo $v['podcast_url']; ?></div><?php
                         break;
                     }
                 ?>

@@ -1851,6 +1851,11 @@ button.white {
     margin-top:20px;
 }
 
+.podcast-container {
+    text-align:center;
+    margin-top:20px;
+}
+
 .iframe-container > div {
     position: relative;
     padding-bottom: 56.25%;
