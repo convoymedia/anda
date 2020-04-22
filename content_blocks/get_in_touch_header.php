@@ -2,6 +2,6 @@
     <img src="<?php the_sub_field("bg_image"); ?>" />
     <div>
         <img src="<?php the_sub_field("blob_image"); ?>" />
-        <?php the_sub_field("title"); ?>
+        <div><?php the_sub_field("title"); ?></div>
     </div>
 </div>
