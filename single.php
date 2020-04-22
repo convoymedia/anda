@@ -64,7 +64,7 @@ get_header(); ?>
 <div class="view-more-author">
     <?php $author = get_the_author_meta($post->post_author); print_r($author); ?>
     <div class="author-image"><img src="<?php echo get_template_directory_uri(); ?>/images/author-cutout.png" style="background-image:url(<?php echo get_avatar_url($post->post_author); ?>)" /></div>
-    <div class="more-author">View more articles by <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?></a>
+    <div class="more-author">View more articles by <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?></a></div>
 </div>
 
 <div class="recent_articles" style="position:relative;display:block">
