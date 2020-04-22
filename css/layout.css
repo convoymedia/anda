@@ -1895,4 +1895,23 @@ button.white {
 
 .get-in-touch {
     background-image:url(../images/getintouch.png);
+    position: absolute;
+    right: -235px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    height: 136px;
+    background-size: contain;
+    width: 200px;
+}
+
+.get-in-touch > div {
+    position: absolute;
+    left: 16px;
+    top: 35%;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }
