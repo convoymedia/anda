@@ -1826,3 +1826,7 @@ button.white {
 .more-author {
     align-self:center;
 }
+
+.more-author img {
+    margin-right:35px;
+}
