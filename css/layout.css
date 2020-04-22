@@ -13,6 +13,9 @@
 br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 } /* Use this br class to clear your floated columns */
 li#theme-switcher { background:#fff; border:10px solid red; padding:20px; position:fixed; top:0; right:0 } /* Use this if you have the Theme Switcher Reloaded plugin (http://themebot.com/webmaster-tools/1-wordpress-theme-switcher-reloaded) installed and want to make it nice and obvious */
 
+body {
+    overflow-x:hidden;
+}
 
 button, .bliss_loadmore {
     color:white;
@@ -1891,4 +1894,22 @@ button.white {
     background-repeat:no-repeat;
     content:' ';
     cursor:pointer;
+}
+
+.get-in-touch {
+    position: absolute;
+    display: block;
+    right: -115px;
+    top: 0px;
+}
+
+.get-in-touch > div {
+    position: absolute;
+    top: 45%;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 42px;
 }
