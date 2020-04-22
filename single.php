@@ -55,7 +55,8 @@ get_header(); ?>
                 <?php
                     switch(get_field("type")) {
                         case "video":
-                            the_field("url");
+                            $v = get_field("video_details");
+							echo $v['url'];
                         break
                     }
                 ?>
