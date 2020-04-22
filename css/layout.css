@@ -1825,8 +1825,13 @@ button.white {
 
 .more-author {
     align-self:center;
+    padding-left:35px;
 }
 
 .more-author img {
-    margin-right:35px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
+    overflow: hidden;
 }
