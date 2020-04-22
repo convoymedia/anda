@@ -52,6 +52,13 @@ get_header(); ?>
                     <div class="author-who"><div>By <?php echo get_the_author_meta("first_name") . " " . get_the_author_meta("last_name"); ?><br/><?php the_author_meta("description"); ?></div></div>
                 </div>
                 <?php the_content(); ?>
+                <?php
+                    switch(get_field("type")) {
+                        case "video":
+                            the_field("url");
+                        break
+                    }
+                ?>
                 <div class="share">
                     <h2>Share: <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>', 'popup', 'width=600,height=600');" class="share-link"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?text=<?php echo get_bloginfo("name"). " " . get_the_title(). " " . get_the_permalink(); ?>" target="popup" onclick="window.open('https://twitter.com/intent/tweet?text=<?php echo get_bloginfo("name"). " " . get_the_title(). " " . get_the_permalink(); ?>', 'popup', 'width=600,height=600');" class="social-share"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" class="social-share" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>', 'popup', 'width=600,height=600');"><i class="fab fa-linkedin-in"></i></a> <a href="mailto:?subject=<?php the_title(); ?>&body=<?php the_permalink(); ?>"><i class="fas fa-envelope"></i></a></h2>
                 </div>
