@@ -74,7 +74,7 @@ get_header(); ?>
 							'post_status' => 'publish' ,
 							'exclude' => array(get_the_ID()),
 							'orderby' => 'rand'
-                        ));
+                        ), $output='ARRAY_A');
                         foreach ($recent_posts as $post) {
                             ?>
                             <div class="post">
