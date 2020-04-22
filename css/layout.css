@@ -1986,3 +1986,11 @@ hr {
 .the-text-holder a {
     color:white;
 }
+
+button {
+    transition:all .3 linear;
+}
+
+button:hover {
+    opacity:.7;
+}
