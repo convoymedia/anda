@@ -68,5 +68,5 @@
 	</div><!-- #access -->
 	<div class="get-in-touch">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/getintouch.png" />
-		<div>Get in touch</div>
+		<div><a href="http://anda-test-uk.stackstaging.com/get-in-touch/">Get in touch</a></div>
 	</div>
