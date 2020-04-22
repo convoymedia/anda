@@ -1925,6 +1925,7 @@ button.white {
 
 .blob_holder.get_in_touch_header {
     position:relative;
+    margin-bottom: -4px;
 }
 
 .get_in_touch_header > img {
