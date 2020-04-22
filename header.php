@@ -67,6 +67,6 @@
 		<br class="clear" />
 	</div><!-- #access -->
 	<div class="get-in-touch">
-		<img src="<?php echo get_template_directory(); ?>/images/getintouch.png" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/getintouch.png" />
 		<div>Get in touch</div>
 	</div>
