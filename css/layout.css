@@ -1812,6 +1812,7 @@ button.white {
     justify-content: center;
     align-content: center;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     font-weight:200;
     font-size:24px;
     font-family: 'Montserrat', sans-serif;
@@ -1819,6 +1820,7 @@ button.white {
     max-width:928px;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:100px;
 }
 
 .more-author {
