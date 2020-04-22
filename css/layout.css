@@ -1977,9 +1977,10 @@ button.white {
 }
 
 hr {
-    padding-top:10px;
-    margin-bottom:30px;
-    border-color:white;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white !important;
+    border: none;
 }
 
 .the-text-holder a {
