@@ -208,10 +208,11 @@
             <div class="recent-posts">
                 <div class="the-posts scroll-posts">
                     <?php
-                        $recent_posts = wp_get_recent_posts(array(
+                        $recent_posts = get_posts(array(
                             'numberposts' => 3,
 							'post_status' => 'publish' ,
-							'exclude' => array(get_the_ID())
+							'exclude' => array(get_the_ID()),
+							'orderby' => 'rand'
                         ));
                         foreach ($recent_posts as $post) {
                             ?>
