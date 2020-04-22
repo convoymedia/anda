@@ -1901,6 +1901,7 @@ button.white {
     display: block;
     right: -115px;
     top: 0px;
+    z-index: 1000;
 }
 
 .get-in-touch > div {
