@@ -57,7 +57,7 @@ get_header(); ?>
                         case "video":
                             $v = get_field("video_details");
 							echo $v['url'];
-                        break
+                        break;
                     }
                 ?>
                 <div class="share">
