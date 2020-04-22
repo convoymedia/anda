@@ -56,7 +56,7 @@ get_header(); ?>
                     switch(get_field("type")) {
                         case "video":
                             $v = get_field("video_details");
-							?></div><div class="iframe-grow"><?php echo $v['video_url']; ?></div><div class="post-content"><?php
+							?></div><div class="iframe-container"><div><?php echo $v['video_url']; ?></div></div><div class="post-content"><?php
                         break;
                     }
                 ?>
