@@ -1806,3 +1806,17 @@ button.white {
 .blog .blob-holder, .search .blob-holder, .category .blob-holder {
     margin-bottom:100px;
 }
+
+.view-more-author {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid black;
+    font-weight:200;
+    font-size:24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.more-author {
+    align-self:center;
+}
