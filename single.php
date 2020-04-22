@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <script>
-    jQuery(document.ready(function($) {
+    jQuery(document).ready(function($) {
         $(".iframe-container").click(function(event) {
             event.preventDefault();
             if (!$(this).hasClass("clicked")) {
