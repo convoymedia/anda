@@ -1962,3 +1962,22 @@ button.white {
     margin-left: 20%;
     margin-top: 40%;
 }
+
+.the-text-holder {
+    position: absolute;
+    left: 8%;
+    top: 9%;
+    width: 35%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    max-width: 450px;
+}
+
+hr {
+    padding-top:10px;
+    margin-bottom:30px;
+    border-color:white;
+}
