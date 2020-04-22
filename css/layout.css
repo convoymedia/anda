@@ -1848,6 +1848,7 @@ button.white {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-top:20px;
 }
 
 .iframe-container > div {
