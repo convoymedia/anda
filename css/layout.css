@@ -1981,3 +1981,7 @@ hr {
     margin-bottom:30px;
     border-color:white;
 }
+
+.the-text-holder a {
+    color:white;
+}
