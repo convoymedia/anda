@@ -2114,8 +2114,11 @@ button:hover {
         margin-right: 150px;
     }
 
+    .get-in-touch {
+        right:-230px;
+    }
+
     .get-in-touch a {
         font-size:16px;
-        right:-230px;
     }
 }
