@@ -2123,7 +2123,7 @@ button:hover {
     }
 
     #topbar {
-        font-size;14px;
+        font-size:14px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -2132,7 +2132,7 @@ button:hover {
         font-size:20px;
     }
 
-    #topbar .smaller {}
+    #topbar .smaller {
         max-width: 900px;
     }
 }
