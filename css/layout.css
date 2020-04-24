@@ -2024,3 +2024,60 @@ button:hover {
         margin-left: 30px;
     }
 }
+
+@media only screen and (max-width: 1690px) {
+    .get-in-touch {
+        right:-200px;
+    }
+
+    .get-in-touch > div {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    #menu-main-navigation {
+        margin-right:20px;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    #menu-main-navigation {
+        margin-right:40px;
+    }
+}
+
+@media only screen and (max-width: 1540px) {
+    #menu-main-navigation {
+        margin-right:60px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #menu-main-navigation {
+        margin-right:80px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #menu-main-navigation {
+        margin-right:100px;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    #menu-main-navigation {
+        margin-right:120px;
+    }
+}
+
+@media only screen and (max-width: 1370px) {
+    #menu-main-navigation {
+        margin-right:140px;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    #menu-main-navigation {
+        margin-right:160px;
+    }
+}
