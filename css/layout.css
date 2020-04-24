@@ -2088,4 +2088,13 @@ button:hover {
     #menu-main-navigation {
         margin-right:200px;
     }
+    .logo {
+        margin-left:0px;
+    }
+    #access {
+        width:100%;
+        padding-left:20px;
+        padding-right:20px;
+        box-sizing:border-box;
+    }
 }
