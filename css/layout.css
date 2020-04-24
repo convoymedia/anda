@@ -2026,16 +2026,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 1690px) {
-    .get-in-touch {
-        right:-200px;
-    }
 
-    .get-in-touch > div {
-        margin-left: 30px;
-    }
-}
-
-@media only screen and (max-width: 1630px) {
     #menu-main-navigation {
         margin-right:20px;
     }
