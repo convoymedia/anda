@@ -2032,25 +2032,25 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1660px) {
     #menu-main-navigation {
         margin-right:40px;
     }
 }
 
-@media only screen and (max-width: 1540px) {
+@media only screen and (max-width: 1620px) {
     #menu-main-navigation {
         margin-right:60px;
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1480px) {
     #menu-main-navigation {
         margin-right:80px;
     }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1430px) {
     #menu-main-navigation {
         margin-right:100px;
     }
