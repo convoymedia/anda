@@ -2066,9 +2066,26 @@ button:hover {
     #menu-main-navigation {
         margin-right:140px;
     }
+
+    .topbar .smaller {
+        max-width:1000px;
+    }
 }
-@media only screen and (max-width: 1340px) {
+
+@media only screen and (max-width: 1410px) {
     #menu-main-navigation {
         margin-right:160px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    #menu-main-navigation {
+        margin-right:180px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    #menu-main-navigation {
+        margin-right:200px;
     }
 }
