@@ -2067,7 +2067,7 @@ button:hover {
         margin-right:140px;
     }
 
-    .topbar .smaller {
+    #topbar .smaller {
         max-width:1000px;
     }
 }
