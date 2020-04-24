@@ -2109,4 +2109,13 @@ button:hover {
     #access li a {
         font-size:16px;
     }
+
+    #menu-main-navigation {
+        margin-right: 150px;
+    }
+
+    .get-in-touch a {
+        font-size:16px;
+        right:-230px;
+    }
 }
