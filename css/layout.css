@@ -2056,13 +2056,13 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1500px) {
     #menu-main-navigation {
         margin-right:120px;
     }
 }
 
-@media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 1450px) {
     #menu-main-navigation {
         margin-right:140px;
     }
