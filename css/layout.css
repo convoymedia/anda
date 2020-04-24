@@ -2098,3 +2098,15 @@ button:hover {
         box-sizing:border-box;
     }
 }
+
+@media only screen and (max-width: 1270px) {
+    #access li a {
+        margin-left:22px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #access li a {
+        font-size:16px;
+    }
+}
