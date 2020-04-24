@@ -1902,17 +1902,19 @@ button.white {
     right: -115px;
     top: 0px;
     z-index: 1000;
+    transition:all linear 0.5s;
 }
 
 .get-in-touch > div {
     position: absolute;
-    top: 45%;
+    top: 46%;
     color: #333333;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 20px;
     margin-left: 42px;
+    transition:all linear 0.5s;
 }
 
 .get-in-touch a {
@@ -1993,4 +1995,32 @@ button {
 
 button:hover {
     opacity:.7;
+}
+
+@media only screen and (max-width: 1880px) {
+    .get-in-touch {
+        right:-125px;
+    }
+}
+
+@media only screen and (max-width: 1845px) {
+    .get-in-touch {
+        right:-150px;
+    }
+}
+
+@media only screen and (max-width: 1790px) {
+    .get-in-touch {
+        right:-175px;
+    }
+}
+
+@media only screen and (max-width: 1745px) {
+    .get-in-touch {
+        right:-200px;
+    }
+
+    .get-in-touch > div {
+        margin-left: 30px;
+    }
 }
