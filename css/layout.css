@@ -2324,5 +2324,19 @@ button:hover {
         height:100%;
         overflow-y:auto;
         background:#333333;
+        background-image: url(../images/explore.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        padding-top: 55%;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 15%;
     }
 }
