@@ -2491,10 +2491,10 @@ button:hover {
         width:80%;
     }
 
-    .two_column_image_text .column-holder h3 {
+    .text_content_area .column-holder div .column-holder h3 {
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
-        font-size: 12px;
+        font-size: 12px; 
     }
 }
