@@ -2614,4 +2614,8 @@ button:hover {
         font-family: "Font Awesome 5 Free";
         margin-left: 20px;
     }
+
+    .nearlylast h3::after {
+        display:none;
+    }
 }
