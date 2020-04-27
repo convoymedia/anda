@@ -2054,6 +2054,24 @@ button:hover {
     #menu-main-navigation {
         margin-right:100px;
     }
+
+    .text_left_image_right .overlay h2::after {
+        margin-top:27px;
+        margin-bottom:27px;
+    }
+
+    .text_left_image_right .overlay h2 {
+        font-size:35px;
+        line-height:35px;
+    }
+
+    .text_left_image_right .overlay p {
+        font-size:15px;
+    }
+
+    button {
+        font-size:18px !important;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
