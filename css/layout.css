@@ -2462,6 +2462,10 @@ button:hover {
         overflow:visible;
     }
 
+    .two_column_image_text .column-holder > div:first-child {
+        margin-bottom: 55px;
+    }
+
     .two_column_image_text .column-holder h3 {
         margin-top: -100px;
         width: 70%;
