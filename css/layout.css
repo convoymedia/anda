@@ -574,7 +574,6 @@ h2 {
     align-items: inherit;
     justify-content: space-between;
     flex-direction: row;
-    vertical-align:top;
 }
 
 .the-posts {
