@@ -16,7 +16,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#333333">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#333333">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#333333">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!-- add required fonts -->
