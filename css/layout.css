@@ -2610,7 +2610,7 @@ button:hover {
     .fifth h3::after {
         display: inline-block;
         content: '\f078';
-        color: white;=
+        color: white;
         font-family: "Font Awesome 5 Free";
         margin-left: 20px;
     }
