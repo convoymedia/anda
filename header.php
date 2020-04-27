@@ -60,11 +60,13 @@
 		</div>
 	</div>
 
-	<div id="access" class="container smaller" role="navigation">
+	<div id="access" class="container smaller hide-mobile" role="navigation">
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo alignleft"><img src="<?php echo get_header_image(); ?>" /></a>
 		<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
 		<br class="clear" />
 	</div><!-- #access -->
+
+	
 	<div class="get-in-touch">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/getintouch.png" />
 		<div><a href="http://anda-test-uk.stackstaging.com/get-in-touch/">Get in touch</a></div>

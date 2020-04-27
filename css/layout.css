@@ -2239,10 +2239,15 @@ button:hover {
     /* mobile stuff */
 
     .tbar {
-        padding-top:10px;
+        padding-top:5px;
     }
 
     .tbar .alignleft {
         font-size: 9px;
+    }
+
+    #access .logo {
+        float:none;
+        margin:auto;
     }
 }
