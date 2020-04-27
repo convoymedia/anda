@@ -2535,6 +2535,10 @@ button:hover {
         font-size:22px;
     }
 
+    .loopholder .wpcf7-form-control.email {
+        font-size: 17px;
+    }
+
     .loopholder .submit {
         position: absolute;
         top: auto;
@@ -2561,5 +2565,13 @@ button:hover {
         width:100%;
         margin-bottom:0px;
         text-align:center;
+    }
+
+    .fifth h3::before {
+        display:none;
+    }
+
+    .fifth:last-child {
+        display:none;
     }
 }
