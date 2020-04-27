@@ -2367,5 +2367,15 @@ button:hover {
         top:80%;
         height:20%;
         width:100%;
+        display:flex;
+        flex-direction:row;
+    }
+
+    .mobmenu > ul {
+        width:50%;
+    }
+
+    .mobmenu-bottom img {
+        width:80%;
     }
 }
