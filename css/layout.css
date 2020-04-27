@@ -2353,6 +2353,10 @@ button:hover {
         overflow: scroll;
     }
 
+    .mobmenu-bottom .fa {
+        margin-right:10px;
+    }
+
     .break {
         display:block;
         position:relative;
