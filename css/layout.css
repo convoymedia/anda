@@ -2036,6 +2036,12 @@ button:hover {
     #menu-main-navigation {
         margin-right:40px;
     }
+
+    #footer {
+        width:90%;
+        padding-left:5%;
+        padding-right:5%;
+    }
 }
 
 @media only screen and (max-width: 1630px) {
@@ -2083,12 +2089,6 @@ button:hover {
 
     .post-text a, .loopholder .wpcf7-form-control.email {
         font-size:22px;
-    }
-
-    #footer {
-        width:90%;
-        padding-left:5%;
-        padding-right:5%;
     }
 }
 
