@@ -2424,7 +2424,7 @@ button:hover {
         height: auto;
     }
 
-    .text_left_image_right > img {
+    .text_left_image_right .underlay-image, .text_left_image_right .main-image {
         display:none;
     }
 
