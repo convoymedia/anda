@@ -2596,7 +2596,7 @@ button:hover {
     }
 
     .grow {
-        max-height:200px
+        max-height:200px !important;
     }
 
     .fifth p {
