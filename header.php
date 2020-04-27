@@ -60,7 +60,7 @@
 		</div>
 	</div>
 
-	<div id="access" class="container smaller hide-mobile" role="navigation">
+	<div id="access" class="container smaller" role="navigation">
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo alignleft"><img src="<?php echo get_header_image(); ?>" /></a>
 		<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
 		<br class="clear" />
