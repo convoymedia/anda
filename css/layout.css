@@ -2623,4 +2623,37 @@ button:hover {
     .nearlylast h3::after {
         display:none;
     }
+
+    .image_left_text_right .overlay {
+        position: relative;
+        width: 80%;
+        margin: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        color: black !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        overflow: visible;
+    }
+
+    .image_left_text_right .overlay h2 {
+        color:black;
+        text-align:center;
+    }
+
+    .image_left_text_right .overlay p {
+        color:black;
+    }
+
+    .image_left_text_right .overlay h2::after {
+        margin-top: 17px;
+        margin-bottom: 17px;
+        border-bottom: 2px solid black;
+    }
+
+    .image_left_text_right .overlay a button {
+        margin-bottom:17px;
+        margin-top:17px;
+    }
 }
