@@ -2371,7 +2371,7 @@ button:hover {
         flex-direction:row;
     }
 
-    .mobmenu > ul {
+    .mobmenu-bottom > ul {
         width:50%;
     }
 
