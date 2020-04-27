@@ -36,7 +36,14 @@
 <div id="mobile-menu" class="show-mobile">
 	<?php wp_nav_menu( array( 'container_class' => 'mobmenu', 'theme_location' => 'mobile' ) ); ?>
 	<div class="break"></div>
-	<div class="mobmenu-bottom"></div>
+	<div class="mobmenu-bottom">
+		<ul>
+			<?php dynamic_sidebar("mobilemenu-topleft-widget-area"); ?>
+		</ul>
+		<ul>
+			<?php dynamic_sidebar("mobilemenu-topright-widget-area"); ?>
+		</ul>
+	</div>
 </div>
 <?php
 	/* Always have wp_footer() just before the closing </body>
