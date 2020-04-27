@@ -2267,13 +2267,19 @@ button:hover {
         margin:auto;
     }
 
+    .logo img {
+        width: 40%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .git {
         position:absolute;
         left:0px;
         top:0px;
         background-image: url(../images/git-mobile.png);
         height: 100%;
-        width: 400px;
+        width: 35%;
     }
 
     #menu-main-navigation {
