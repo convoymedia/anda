@@ -2328,6 +2328,7 @@ button:hover {
         background-repeat: no-repeat;
         background-size: 75%;
         padding-top: 55%;
+        z-index: 9999999;
     }
 
     #mobile-menu li {
@@ -2345,5 +2346,10 @@ button:hover {
         font-weight: 300;
         font-size: 18px;
         line-height: 50px;
+    }
+
+    .mobmenu {
+        height: 42%;
+        overflow: scroll;
     }
 }
