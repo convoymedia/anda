@@ -2330,10 +2330,13 @@ button:hover {
         padding-top: 48%;
         z-index: 9999999;
         box-sizing:border-box;
+        opacity:0;
+        transition:all linear .5s;
     }
 
     .show {
         display:block !important;
+        opacity:1 !important;
     }
 
     #mobile-menu li {
