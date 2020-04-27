@@ -35,7 +35,7 @@
 <script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
 <script>
 	jQuery(document).ready(function($) {
-		/*$('.scroll-posts').slick({
+		$('.scroll-posts').slick({
   			infinite: true,
   			slidesToShow: 4,
   			slidesToScroll: 4,
@@ -43,14 +43,9 @@
         	prevArrow: '<div class="slick-prev"></div>',
 			responsive: [{
       			breakpoint: 1100,
-      			settings: {
-        			slidesToShow: 2,
-        			slidesToScroll: 2,
-        			infinite: true,
-        			dots: false,
-      			}
+      			settings: "unslick"
     		}]
-		});*/
+		});
 
 		$('.quotes').slick({
   			infinite: true,
