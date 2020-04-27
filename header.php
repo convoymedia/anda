@@ -52,7 +52,7 @@
 
 		$(".open-menu").click(function(event) {
 			event.preventDefault();
-			$("#mobile-menu").addClass("show").delay(500).css({"opacity" : 1});
+			$("#mobile-menu").addClass("show").delay(500).animate({"opacity" : 1});
 		})
 
 		$(".mobmenu-close").click(function(event) {
