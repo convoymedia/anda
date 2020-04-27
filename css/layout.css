@@ -2098,6 +2098,19 @@ button:hover {
     }
 }
 
+@media only screen and (max-width:1480px) {
+    .post-text a {
+        font-size:18px !important;
+    }
+}
+
+@media only screen and (max-width:1408px) {
+    .post-text button {
+        padding: 10px 0px !important;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1450px) {
     #menu-main-navigation {
         margin-right:140px;
