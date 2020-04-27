@@ -2099,7 +2099,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1285px) {
     #access li a {
         margin-left:22px;
     }
