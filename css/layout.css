@@ -2214,4 +2214,9 @@ button:hover {
     .get-in-touch {
         display:none;
     }
+
+    * {
+        max-width:100%;
+        overflow-x:hidden;
+    }
 }
