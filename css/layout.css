@@ -2571,7 +2571,7 @@ button:hover {
         display:none;
     }
 
-    .fifth:last-child {
+    .fifth.last {
         display:none;
     }
 
@@ -2587,5 +2587,10 @@ button:hover {
         width: 50%;
         height: auto;
         padding-bottom: 20px;
+    }
+
+    #footer h3 + div {
+        height: 0px;
+        margin-bottom: 5px;
     }
 }
