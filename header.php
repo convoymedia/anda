@@ -63,10 +63,10 @@
 		$(".fifth h3").click(function(event) {
 			event.preventDefault();
 			if ($(this).hasClass("grow")) {
-				$(this).removeClass("grow");
+				$(this).next("div").removeClass("grow");
 			}
 			else {
-				$(this).addClass("grow");
+				$(this).next("div").addClass("grow");
 			}
 		})
 	});
