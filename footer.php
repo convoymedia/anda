@@ -33,6 +33,7 @@
 <div id="extra-footer">
 	<?php dynamic_sidebar( 'under-footer-widget-area' ); ?>
 </div>
+<div id="mobile-menu show-mobile"></div>
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
