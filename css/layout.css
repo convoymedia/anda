@@ -2244,7 +2244,12 @@ button:hover {
 
     .tbar .alignleft {
         margin-top:-3px;
-        font-size: 9px;
+        font-size: 10px;
+    }
+
+    #topbar {
+        height: 25px;
+        padding-top: 4px;
     }
 
     .tbar .alignright.socials {
