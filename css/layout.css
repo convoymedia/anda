@@ -2309,6 +2309,6 @@ button:hover {
         background-image: url(../images/menu-open.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: contain;
+        background-size: 35px auto;
     }
 }
