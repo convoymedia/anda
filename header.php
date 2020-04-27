@@ -50,9 +50,13 @@
 
 <body <?php body_class(); ?>>
 	<div id="topbar">
-		<div class="container smaller">
+		<div class="container smaller hide-mobile">
 			<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
 			<div class="alignright socials"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
+		</div>
+		<div class="show-mobile">
+			<div class="alignleft"><?php dynamic_sidebar( 'mobilebar-topleft-widget-area' ); ?></div>
+			<div class="alignright socials"><?php dynamic_sidebar( 'mobilebar-topright-widget-area' ); ?></div>
 		</div>
 	</div>
 

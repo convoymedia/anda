@@ -17,6 +17,14 @@ body {
     overflow-x:hidden;
 }
 
+.hide-mobile {
+    display:block;
+}
+
+.show-mobile {
+    display:none;
+}
+
 button, .bliss_loadmore {
     color:white;
     font-family: 'Montserrat', sans-serif;
@@ -2211,6 +2219,14 @@ button:hover {
 }
 
 @media only screen and (max-width:1100px) {
+    .show-mobile {
+        display:block;
+    }
+
+    .hide-mobile {
+        display:none;
+    }
+
     .get-in-touch {
         display:none;
     }
