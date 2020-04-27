@@ -2060,17 +2060,21 @@ button:hover {
         margin-bottom:27px;
     }
 
-    .text_left_image_right .overlay h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2 {
         font-size:35px;
         line-height:35px;
     }
 
-    .text_left_image_right .overlay p {
-        font-size:15px;
+    .text_left_image_right .overlay p, .two_column_image_text .column-holder p {
+        font-size:15px !important;
     }
 
     button {
         font-size:18px !important;
+    }
+
+    .two_column_image_text .column-holder h3 {
+        font-size:18px;
     }
 }
 
