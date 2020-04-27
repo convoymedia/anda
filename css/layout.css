@@ -2487,6 +2487,15 @@ button:hover {
         font-size: 24px;
     }
 
+    .text_content_area {
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    .text_content_area h2 {
+        margin-bottom: 40px;
+    }
+
     .text_content_area .column-holder {
         width:80%;
     }
