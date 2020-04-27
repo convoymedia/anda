@@ -2265,4 +2265,8 @@ button:hover {
         height: 100%;
         width: 400px;
     }
+
+    #menu-main-navigation {
+        display:none;
+    }
 }
