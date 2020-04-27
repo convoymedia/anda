@@ -2326,8 +2326,9 @@ button:hover {
         background-image: url(../images/explore.png);
         background-repeat: no-repeat;
         background-size: 75%;
-        padding-top: 55%;
+        padding-top: 48%;
         z-index: 9999999;
+        box-sizing:border-box;
     }
 
     #mobile-menu li {
@@ -2359,5 +2360,12 @@ button:hover {
         height:1px;
         border-bottom:1px solid #595959;
         margin-left:15%;
+    }
+
+    .mobmenu-bottom {
+        position:absolute;
+        top:90%;
+        height:10%;
+        width:10)%;
     }
 }
