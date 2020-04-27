@@ -2330,6 +2330,14 @@ button:hover {
         padding-top: 55%;
     }
 
+    #mobile-menu li {
+        padding-left: 15%;
+    }
+
+    #mobile-menu .sub-menu {
+        display:none;
+    }
+
     #mobile-menu a {
         color: white;
         text-decoration: none;
@@ -2337,6 +2345,5 @@ button:hover {
         font-weight: 300;
         font-size: 18px;
         line-height: 50px;
-        padding-left: 15%;
     }
 }
