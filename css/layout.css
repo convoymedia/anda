@@ -2447,15 +2447,18 @@ button:hover {
 
     .two_column_image_text h2 {
         margin-bottom: 40px;
+        overflow:hidden;
     }
 
     .two_column_image_text .column-holder {
         width:80%;
         flex-direction:column;
+        overflow:visible;
     }
 
     .two_column_image_text .column-holder > div {
         width:100%;
         margin:0px;
+        overflow:visible;
     }
 }
