@@ -7,6 +7,7 @@
             <?php $image = wp_get_attachment_image_src(get_sub_field("image"), "shades_grey_curved"); ?>
             <img src="<?php echo $image[0]; ?>" class="underlay-image" />
             <div class="overlay">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/responsive1.png" class="show-mobile" />
                 <h2><?php the_sub_field("title"); ?></h2>
                 <?php the_sub_field("content"); ?>
                 <?php if (get_sub_field("button_link")) { ?>
