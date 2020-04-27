@@ -2299,4 +2299,16 @@ button:hover {
     #menu-main-navigation {
         display:none;
     }
+
+    .open-menu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 30%;
+        background-image: url(../images/menu-open.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
 }
