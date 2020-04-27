@@ -33,8 +33,8 @@
 <div id="extra-footer">
 	<?php dynamic_sidebar( 'under-footer-widget-area' ); ?>
 </div>
-<div id="mobile-menu show-mobile">
-<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
+<div id="mobile-menu" class="show-mobile">
+	<?php wp_nav_menu( array( 'container_class' => 'mobmenu', 'theme_location' => 'primary' ) ); ?>
 </div>
 <?php
 	/* Always have wp_footer() just before the closing </body>
