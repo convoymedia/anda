@@ -2542,4 +2542,24 @@ button:hover {
         margin: 0;
         right: 25%;
     }
+
+    #footer {
+        padding-top:35px;
+    }
+
+    #footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fifth {
+        width:100%;
+    }
+
+    .fifth .widget-container {
+        max-width:100%;
+        width:100%;
+        margin-bottom:0px;
+        text-align:center;
+    }
 }
