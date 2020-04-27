@@ -2268,7 +2268,7 @@ button:hover {
     }
 
     .logo img {
-        width: 40%;
+        width: 35%;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -2278,8 +2278,10 @@ button:hover {
         left:0px;
         top:0px;
         background-image: url(../images/git-mobile.png);
+        background-position: -199px -73px;
         height: 100%;
         width: 35%;
+        background-repeat:no-repeat;
     }
 
     #menu-main-navigation {
