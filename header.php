@@ -56,7 +56,7 @@
 		})
 
 		$(".mobmenu-close").click(function(event) {
-			event.prevetDefault();
+			event.preventDefault()
 			$("#mobile-menu").removeClass("show");
 		})
 	});
