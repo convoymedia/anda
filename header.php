@@ -41,17 +41,18 @@
   			slidesToScroll: 4,
 			nextArrow: '<div class="slick-next"></div>',
         	prevArrow: '<div class="slick-prev"></div>',
-			responsive: [{
-      			breakpoint: 1100,
-      			settings: "unslick"
-    		}]
+			
 		});
 
 		$('.quotes').slick({
   			infinite: true,
 			speed: 500,
 			autoplay:true,
-			arrows:false
+			arrows:false,
+			responsive: [{
+      			breakpoint: 1100,
+      			settings: "unslick"
+    		}]
 		});
 
 		$(".open-menu").click(function(event) {
