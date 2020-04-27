@@ -2246,6 +2246,10 @@ button:hover {
         font-size: 9px;
     }
 
+    #access {
+        text-align:center;
+    }
+
     #access .logo {
         float:none;
         margin:auto;
