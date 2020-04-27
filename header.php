@@ -49,10 +49,6 @@
 			speed: 500,
 			autoplay:true,
 			arrows:false,
-			responsive: [{
-      			breakpoint: 1100,
-      			settings: "unslick"
-    		}]
 		});
 
 		$(".open-menu").click(function(event) {
