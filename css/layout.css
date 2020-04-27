@@ -2352,9 +2352,9 @@ button:hover {
         overflow: scroll;
     }
 
-    .mobmenu::after {
+    .break {
         display:block;
-        content:' ';
+        position:relative;
         width:45%;
         height:1px;
         border-bottom:1px solid #595959;
