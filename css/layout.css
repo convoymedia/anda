@@ -2450,7 +2450,7 @@ button:hover {
     }
 
     .two_column_image_text .column-holder {
-        width:90%;
+        width:80%;
         flex-direction:column;
     }
 
