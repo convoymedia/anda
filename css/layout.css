@@ -2235,6 +2235,10 @@ button:hover {
         overflow-x:hidden;
     }
 
+    .n2-section-smartslider {
+        display:none;
+    }
+
     /* mobile stuff */
 
     .tbar {
