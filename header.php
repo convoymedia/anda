@@ -51,11 +51,7 @@
   			infinite: true,
 			speed: 500,
 			autoplay:true,
-			arrows:false,
-			responsive: [{
-      			breakpoint: 1100,
-      			settings: "unslick"
-    		}]
+			arrows:false
 		});
 
 		$(".open-menu").click(function(event) {
