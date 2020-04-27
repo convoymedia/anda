@@ -49,6 +49,11 @@
 			autoplay:true,
 			arrows:false
 		});
+
+		$(".mobmenu-close").click(function(event) {
+			event.prevetDefault();
+			$("#mobile-menu").removeClass("show");
+		})
 	});
 </script>
 </head>

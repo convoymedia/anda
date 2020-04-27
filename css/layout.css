@@ -2317,6 +2317,7 @@ button:hover {
 
     #mobile-menu {
         position:fixed;
+        display:none;
         top:0px;
         left:0px;
         width:100%;
@@ -2329,6 +2330,10 @@ button:hover {
         padding-top: 48%;
         z-index: 9999999;
         box-sizing:border-box;
+    }
+
+    .show {
+        display:block !important;
     }
 
     #mobile-menu li {
@@ -2368,6 +2373,7 @@ button:hover {
         background-position: center center;
         background-size: 28px auto;
         margin-top: -72%;
+        cursor:pointer;
     }
 
     .break {
