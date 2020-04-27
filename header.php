@@ -35,7 +35,7 @@
 <script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
 <script>
 	jQuery(document).ready(function($) {
-		$('.scroll-posts').slick({
+		/*$('.scroll-posts').slick({
   			infinite: true,
   			slidesToShow: 4,
   			slidesToScroll: 4,
@@ -50,7 +50,7 @@
         			dots: false,
       			}
     		}]
-		});
+		});*/
 
 		$('.quotes').slick({
   			infinite: true,
