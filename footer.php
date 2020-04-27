@@ -21,7 +21,7 @@
 		<ul class="fifth">
 			<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
 		</ul>
-		<ul class="fifth">
+		<ul class="fifth nearlylast">
 			<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
 		</ul>
 		<ul class="fifth last">
