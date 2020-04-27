@@ -2332,12 +2332,12 @@ button:hover {
         z-index: 9999999;
         box-sizing:border-box;
         opacity:0;
-        transition:opacity linear .5s;
+        transition:all linear .5s;
     }
 
     .show {
-        display:block !important;
-        left:0px;
+        left:0px !important;
+        opacity:1 !important;
     }
 
     #mobile-menu li {
