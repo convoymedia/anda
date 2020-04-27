@@ -2420,7 +2420,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2 {
         font-size:28px;
     }
 
@@ -2706,5 +2706,51 @@ button:hover {
 
     .recent-posts .post:nth-child(2) {
         display:block !important;
+    }
+
+    .blob1 h1, .blob2 h1, .blob3 h1, .blob4 h1, .blob5 h1 {
+        font-size:18px;
+    }
+
+    .white-solid {
+        display:none;
+    }
+
+    .white_solid .overlay {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .coloured-box {
+        display:none;
+    }
+
+    .image_content_box h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .team-members {
+        width:80%;
+    }
+
+    .team-member {
+        width:48%;
+        font-size:16px;
+    }
+
+    .team-member img {
+        margin-bottom:15px;
+    }
+
+    .team-member .name {
+        margin-top:7px;
+        font-size:14px;
+    }
+
+    .team-member .linkedin {
+        margin-top:15px;
+        margin-bottom:15px;
     }
 }
