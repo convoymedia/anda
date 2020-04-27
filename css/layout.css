@@ -2351,4 +2351,12 @@ button:hover {
         height: 42%;
         overflow: scroll;
     }
+
+    .mobmenu::after {
+        display:block;
+        content:' ';
+        width:45%;
+        height:1px;
+        border-bottom:1px solid #595959;
+    }
 }
