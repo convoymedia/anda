@@ -62,7 +62,7 @@
 
 		$(".fifth h3").click(function(event) {
 			event.preventDefault();
-			if ($(this).hasClass("grow")) {
+			if ($(this).next("div").hasClass("grow")) {
 				$(this).next("div").removeClass("grow");
 			}
 			else {
