@@ -2410,7 +2410,7 @@ button:hover {
         width:80%;
     }
 
-    .text-area {
+    .text_area {
         margin-top:60px !important;
         margin-bottom:60px !important;
     }
@@ -2419,7 +2419,7 @@ button:hover {
         margin-bottom:0px;
     }
 
-    .text-area img {
+    .text_area img {
         width: 25%;
         height: auto;
     }
@@ -2428,7 +2428,7 @@ button:hover {
         display:none;
     }
 
-    .text-left_image_right .overlay {
+    .text_left_image_right .overlay {
         width: 100%;
         background: blue; /* change this */
         position: relative;
