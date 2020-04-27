@@ -2318,6 +2318,7 @@ button:hover {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 35px auto;
+        cursor:pointer;
     }
 
     #mobile-menu {
@@ -2437,5 +2438,24 @@ button:hover {
         margin: 0px;
         padding-bottom: 50px;
         box-sizing: border-box;
+    }
+
+    .two_column_image_text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .two_column_image_text h2 {
+        margin-bottom: 40px;
+    }
+
+    .two_column_image_text .column-holder {
+        width:90%;
+        flex-direction:column;
+    }
+
+    .two_column_image_text .column-holder > div {
+        width:100%;
+        margin:0px;
     }
 }
