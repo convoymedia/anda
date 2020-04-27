@@ -400,6 +400,26 @@ function twentyten_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name' => __( 'Mobile Top Bar Left', 'twentyten' ),
+		'id' => 'mobilebar-topleft-widget-area',
+		'description' => __( 'Widget area for the top bar', 'twentyten' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Mobile Top Bar Right', 'twentyten' ),
+		'id' => 'mobilebar-topright-widget-area',
+		'description' => __( 'Widget area for top bar', 'twentyten' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
 		'name' => __( 'Blog Filter', 'twentyten' ),
 		'id' => 'blog-filter-widget-area',
 		'description' => __( 'Widget area for blog filter', 'twentyten' ),
