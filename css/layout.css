@@ -262,6 +262,10 @@ h2 {
 
 /* content blocks */
 
+.rp-hold {
+    position:absolute;top:0px;left:0px;width:100%;height:100%;
+}
+
 .text_area {
     position:relative;
     display:block;
@@ -2663,6 +2667,9 @@ button:hover {
     .recent_articles {
         position: relative;
         display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .recent_articles > img, .recent_articles > img + div {
@@ -2676,8 +2683,13 @@ button:hover {
     }
 
     .recent-posts {
-        width:90%;
+        width:100%;
         margin-left:auto;
         margin-right:auto;
+    }
+
+    .rp-hold {
+        position:relative;
+        height:auto;
     }
 }
