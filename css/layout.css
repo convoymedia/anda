@@ -2603,9 +2603,15 @@ button:hover {
         padding-top: 20px;
     }
 
+    .fifth h3 {
+        cursor : pointer;
+    }
+
     .fifth h3::after {
-        display:inline-block;
-        content: '@';
-        color:white;
+        display: inline-block;
+        content: '\f078';
+        color: white;=
+        font-family: "Font Awesome 5 Free";
+        margin-left: 20px;
     }
 }
