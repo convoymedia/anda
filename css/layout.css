@@ -2317,9 +2317,9 @@ button:hover {
 
     #mobile-menu {
         position:fixed;
-        display:none;
+        display:block;
         top:0px;
-        left:0px;
+        left:-1000px;
         width:100%;
         height:100%;
         overflow-y:auto;
@@ -2331,11 +2331,12 @@ button:hover {
         z-index: 9999999;
         box-sizing:border-box;
         opacity:0;
-        transition:all linear .5s;
+        transition:opacity linear .5s;
     }
 
     .show {
         display:block !important;
+        left:0px;
     }
 
     #mobile-menu li {
