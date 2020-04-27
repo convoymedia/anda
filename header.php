@@ -66,7 +66,8 @@
 		</div>
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo alignleft"><img src="<?php echo get_header_image(); ?>" /></a>
 		<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
-		<div class="menu-open"></div>
+		<div class="show-mobile"></div>
+		<br class="clear" />
 	</div><!-- #access -->
 	
 	
