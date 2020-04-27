@@ -2409,4 +2409,33 @@ button:hover {
     .mobmenu-bottom img {
         width:80%;
     }
+
+    .text-area {
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+
+    .text_area h2 {
+        margin-bottom:0px;
+    }
+
+    .text-area img {
+        width: 25%;
+        height: auto;
+    }
+
+    .text_left_image_right > img {
+        display:none;
+    }
+
+    .text-left_image_right > p {
+        width: 100%;
+        background: blue; /* change this */
+        position: relative;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
 }
