@@ -2692,4 +2692,19 @@ button:hover {
         position:relative;
         height:auto;
     }
+
+    .recent-posts .post {
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+        display:none;
+    }
+
+    .recent-posts .post:first-child {
+        display:block !important;
+    }
+
+    .recent-posts .post:nth-child(2n) {
+        display:block !important;
+    }
 }
