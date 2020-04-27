@@ -2236,7 +2236,7 @@ button:hover {
     }
 
     .n2-section-smartslider {
-        display:none;
+        display:none !important;
     }
 
     /* mobile stuff */
