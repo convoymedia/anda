@@ -2497,4 +2497,33 @@ button:hover {
         padding-right: 5%;
         font-size: 12px; 
     }
+
+    .form .wpcf7-form {
+        width:90%;
+        margin:auto;
+    }
+
+    .form p {
+        font-size:22px;
+    }
+
+    .loopholder {
+        background-size: contain;
+    }
+
+    .loopholder .wpcf7-form-control-wrap.email {
+        top:48%;
+    }
+
+    .loopholder .wpcf7-form-control.email {
+        font-size:22px;
+    }
+
+    .loopholder .submit {
+        position: absolute;
+        top: auto;
+        bottom: 25px;
+        margin: 0;
+        right: 25%;
+    }
 }
