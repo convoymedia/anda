@@ -2461,4 +2461,21 @@ button:hover {
         margin:0px;
         overflow:visible;
     }
+
+    .two_column_image_text .column-holder h3 {
+        margin-top: -100px;
+        width: 70%;
+    }
+
+    .two_column_image_text .column-holder h3 img {
+        margin: auto;
+        overflow-x: visible;
+    }
+
+    .two_column_image_text .column-holder .blob-text {
+        position: absolute;
+        display: block;
+        margin-top: -100px;
+        font-size: 24px;
+    }
 }
