@@ -2590,8 +2590,13 @@ button:hover {
     }
 
     #footer h3 + div {
-        height: 0px;
+        max-height: 0px;
         margin-bottom: 5px;
+        transition:all linear .5s;
+    }
+
+    .grow {
+        max-height:200px
     }
 
     .fifth p {

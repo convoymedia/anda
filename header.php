@@ -59,6 +59,16 @@
 			event.preventDefault()
 			$("#mobile-menu").removeClass("show");
 		})
+
+		$(".fifth h3").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("grow")) {
+				$(this).removeClass("grow");
+			}
+			else {
+				$(this).addClass("grow");
+			}
+		})
 	});
 </script>
 </head>
