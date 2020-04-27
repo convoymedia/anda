@@ -2796,4 +2796,8 @@ button:hover {
     .who-said-it::before { 
         margin-top:10px;
     }
+
+    .slick-track {
+        max-width:revert;
+    }
 }
