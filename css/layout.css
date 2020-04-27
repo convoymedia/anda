@@ -2753,4 +2753,43 @@ button:hover {
         margin-top:15px;
         margin-bottom:15px;
     }
+
+    .quotes {
+        width:90%;
+    }
+
+    .the-quote {
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .the-quote::before {
+        position: absolute;
+        display: block;
+        background-image: url(../images/top_speech.png);
+        width: 26px;
+        height: 62px;
+        content: ' ';
+        top: 0px;
+        left: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .the-quote::after {
+        position: absolute;
+        display: block;
+        background-image: url(../images/bottom_speech.png);
+        width: 26px;
+        height: 27px;
+        content: ' ';
+        right: 0px;
+        bottom: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .who-said-it {
+        font-size: 16px;
+    }
 }
