@@ -34,6 +34,7 @@
 	<?php dynamic_sidebar( 'under-footer-widget-area' ); ?>
 </div>
 <div id="mobile-menu" class="show-mobile">
+	<div class="mobmenu-close"></div>
 	<?php wp_nav_menu( array( 'container_class' => 'mobmenu', 'theme_location' => 'mobile' ) ); ?>
 	<div class="break"></div>
 	<div class="mobmenu-bottom">

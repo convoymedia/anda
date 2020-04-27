@@ -2357,6 +2357,18 @@ button:hover {
         margin-right:10px;
     }
 
+    .mobmenu-close{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 30%;
+        background-image: url(../images/menu-close.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 35px auto;
+    }
+
     .break {
         display:block;
         position:relative;
