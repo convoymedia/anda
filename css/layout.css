@@ -2366,8 +2366,8 @@ button:hover {
         background-image: url(../images/menu-close.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 35px auto;
-        margin-top: -75%;
+        background-size: 28px auto;
+        margin-top: -72%;
     }
 
     .break {
