@@ -2574,4 +2574,18 @@ button:hover {
     .fifth:last-child {
         display:none;
     }
+
+    #extra-footer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+
+    #footer .fifth img {
+        max-width: 100%;
+        width: 50%;
+        height: auto;
+        padding-bottom: 20px;
+    }
 }
