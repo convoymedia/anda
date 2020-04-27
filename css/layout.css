@@ -2060,7 +2060,7 @@ button:hover {
         margin-bottom:27px;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2 {
         font-size:35px;
         line-height:35px;
     }
@@ -2073,7 +2073,7 @@ button:hover {
         font-size:18px !important;
     }
 
-    .two_column_image_text .column-holder h3, .text_content_area .column-holder div {
+    .two_column_image_text .column-holder h3, .text_content_area .column-holder div, .form p {
         font-size:28px;
     }
 
@@ -2081,7 +2081,7 @@ button:hover {
         font-size:15px;
     }
 
-    .post-text a {
+    .post-text a, .loopholder .wpcf7-form-control.email {
         font-size:22px;
     }
 }
