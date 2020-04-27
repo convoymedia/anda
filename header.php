@@ -41,7 +41,10 @@
   			slidesToScroll: 4,
 			nextArrow: '<div class="slick-next"></div>',
         	prevArrow: '<div class="slick-prev"></div>',
-			
+			responsive: [{
+      			breakpoint: 1100,
+      			settings: "unslick"
+    		}]
 		});
 
 		$('.quotes').slick({
