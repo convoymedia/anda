@@ -2639,7 +2639,6 @@ button:hover {
 
     .image_left_text_right .overlay h2 {
         color:black;
-        text-align:center;
     }
 
     .image_left_text_right .overlay p {
@@ -2659,5 +2658,26 @@ button:hover {
 
     .image_left_text_right > img {
         display:none;
+    }
+
+    .recent_articles {
+        position: relative;
+        display: block;
+    }
+
+    .recent_articles > img, .recent_articles > img + div {
+        display:none;
+    }
+
+    .recent_articles h2 {
+        color:black;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    .recent-posts {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
