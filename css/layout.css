@@ -2597,4 +2597,9 @@ button:hover {
     .fifth p {
         margin-bottom: 20px;
     }
+
+    .fifth.nearlylast h3 + div{
+        height: auto !important;
+        padding-top: 20px;
+    }
 }
