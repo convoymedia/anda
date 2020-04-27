@@ -50,6 +50,11 @@
 			arrows:false
 		});
 
+		$(". open-menu").click(function(event) {
+			event.reventDefault();
+			$("#mobile-menu").addClass("show");
+		})
+
 		$(".mobmenu-close").click(function(event) {
 			event.prevetDefault();
 			$("#mobile-menu").removeClass("show");
