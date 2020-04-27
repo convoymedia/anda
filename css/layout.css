@@ -2243,7 +2243,17 @@ button:hover {
     }
 
     .tbar .alignleft {
+        margin-top:-3px;
         font-size: 9px;
+    }
+
+    .tbar .alignright.socials {
+        margin-top:-5px;
+        overflow:auto;
+    }
+
+    #topbar .tbar .socials a {
+        font-size:13px;
     }
 
     #access {
