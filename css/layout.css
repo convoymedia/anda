@@ -2430,7 +2430,7 @@ button:hover {
 
     .text_left_image_right .overlay {
         width: 100%;
-        background: blue; /* change this */
+        background: #E3E3E3;
         position: relative;
         padding-left: 10%;
         padding-right: 10%;
