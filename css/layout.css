@@ -2254,4 +2254,10 @@ button:hover {
         float:none;
         margin:auto;
     }
+
+    .git {
+        position:absolute;
+        left:0px;
+        top:0px;
+    }
 }

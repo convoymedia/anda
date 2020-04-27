@@ -65,7 +65,8 @@
 		<?php wp_nav_menu( array( 'container_class' => 'alignright', 'theme_location' => 'primary' ) ); ?>
 		<br class="clear" />
 	</div><!-- #access -->
-
+	<div class="git show-mobile">
+	</div>
 	
 	<div class="get-in-touch">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/getintouch.png" />
