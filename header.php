@@ -50,7 +50,7 @@
 			arrows:false
 		});
 
-		$(". open-menu").click(function(event) {
+		$(".open-menu").click(function(event) {
 			event.reventDefault();
 			$("#mobile-menu").addClass("show");
 		})
