@@ -54,7 +54,7 @@
 			<div class="alignleft"><?php dynamic_sidebar( 'bar-topleft-widget-area' ); ?></div>
 			<div class="alignright socials"><?php dynamic_sidebar( 'bar-topright-widget-area' ); ?></div>
 		</div>
-		<div class="show-mobile">
+		<div class="show-mobile tbar">
 			<div class="alignleft"><?php dynamic_sidebar( 'mobilebar-topleft-widget-area' ); ?></div>
 			<div class="alignright socials"><?php dynamic_sidebar( 'mobilebar-topright-widget-area' ); ?></div>
 		</div>

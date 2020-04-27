@@ -2235,4 +2235,14 @@ button:hover {
         max-width:100%;
         overflow-x:hidden;
     }
+
+    /* mobile stuff */
+
+    .tbar {
+        padding-top:10px;
+    }
+
+    .tbar .alignleft {
+        font-size: 9px;
+    }
 }
