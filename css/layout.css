@@ -2396,13 +2396,12 @@ button:hover {
         position: absolute;
         top: 0px;
         right: 0px;
-        height: 100%;
+        height: 20%;
         width: 30%;
         background-image: url(../images/menu-close.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 28px auto;
-        margin-top: -70%;
         cursor:pointer;
     }
 
@@ -2497,7 +2496,7 @@ button:hover {
     }
 
     .two_column_image_text .column-holder h3 img {
-        margin: auto;
+        margin: 0px;
         overflow-x: visible;
     }
 
