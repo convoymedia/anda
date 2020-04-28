@@ -2196,7 +2196,7 @@ button:hover {
         font-size:28px;
     }
 
-    p {
+    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div, .product-text p {
         font-size:13px !important;
     }
 }
