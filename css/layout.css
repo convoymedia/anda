@@ -2962,7 +2962,7 @@ button:hover {
         font-size:15px;
     }
 
-    .single h1, , .search h1, .category h1 {
+    .single h1, .search h1, .category h1 {
         font-size:18px;
     }
 
@@ -3022,5 +3022,29 @@ button:hover {
         margin-left: 0px;
         width: 100%;
         margin-top: 20px;
+    }
+
+    .featured-post {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .featured-text, .featured-image {
+        width:100%;
+    }
+
+    .featured-text > div {
+        padding: 29px;
+        box-sizing: border-box;
+    }
+
+    .featured-text h2 {
+        font-size:18px !important;
+    }
+
+    .recent-posts {
+        width:80%;
     }
 }
