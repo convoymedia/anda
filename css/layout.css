@@ -2811,7 +2811,6 @@ button:hover {
         margin-top:0px !important;
         padding-top:25px;
         padding-bottom:25px;
-        background: #575756;
     }
 
     .dark_grey_solid .overlay h2, .dark_grey_solid .overlay p {
@@ -2825,6 +2824,7 @@ button:hover {
     .points-holder {
         flex-direction:column;
         width:80%;
+        overflow:visible;
     }
 
     .header-holder h2 {
@@ -2834,5 +2834,14 @@ button:hover {
 
     .text-side {
         width:100%;
+    }
+
+    .blog_left_text_right {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .header-holder {
+        margin-right:0px;
     }
 }
