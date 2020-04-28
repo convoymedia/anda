@@ -2845,4 +2845,29 @@ button:hover {
     .header-holder {
         margin-right:0px;
     }
+
+    .icon_left_text_right_solid_bg {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .icon-text {
+        flex-direction: column;
+        max-width: revert;
+        width: 80%;
+        align-content: center;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .icon-text > img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon-text > div {
+        width: 100%;
+        padding: unset;
+        overflow: visible;
+    }
 }
