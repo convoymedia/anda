@@ -2424,7 +2424,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2, .the-product .product-text h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2, .the-product .product-text h2, h2 {
         font-size:28px;
     }
 
@@ -3052,5 +3052,38 @@ button:hover {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .post-content {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .post-content .meta {
+        font-size:14px;
+        margin-bottom:20px;
+    }
+
+    .post-content .meta a{
+        font-size:14px;
+    }
+
+    .author-image {
+        overflow:visible;
+    }
+
+    .author-who {
+        font-size:12px;
+    }
+
+    .post-author {
+        overflow:visible;
+    }
+
+    .view-more-author {
+        font-size:12px;
+        width:80%;
+        overflow:visible;
     }
 }
