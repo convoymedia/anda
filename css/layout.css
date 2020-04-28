@@ -2907,4 +2907,12 @@ button:hover {
         width: 100%;
         box-sizing: border-box;
     }
+
+    .wpcf7-form{
+        overflow:visible;
+    }
+
+    .form-holder .Checkbox {
+        width:100%;
+    }
 }
