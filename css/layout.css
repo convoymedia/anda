@@ -3113,7 +3113,7 @@ button:hover {
         margin-right:auto;
     }
 
-    .first > * {
+    .first h2, .first div {
         width:100%;
         overflow:visible;
     }
