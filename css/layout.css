@@ -3086,4 +3086,12 @@ button:hover {
         width:80%;
         overflow:visible;
     }
+
+    .blog-quote {
+        width:80%;
+    }
+
+    .inner-quote {
+        padding:30px;
+    }
 }
