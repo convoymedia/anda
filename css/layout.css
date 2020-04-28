@@ -2242,6 +2242,22 @@ button:hover {
     }
 }
 
+@media only screen and (max-width:1050px) {
+    .image_left_text_right .overlay h2::after, .text_left_image_right .overlay h2::after {
+        margin-left: -50px;
+    }
+
+    .text_left_image_right .overlay {
+        margin-left: 10%;
+        width: 41%;
+    }
+
+    .image_left_text_right .overlay {
+        margin-right: 6%;
+        width: 41%;
+    }
+}
+
 @media only screen and (max-width:1000px) {
     .show-mobile {
         display:block;
