@@ -3049,6 +3049,8 @@ button:hover {
     }
 
     .blog h3, .search h3, .category h3 {
-        width:80%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
