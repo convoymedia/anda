@@ -3098,4 +3098,8 @@ button:hover {
     body {
         overflow:hidden;
     }
+
+    .light_grey_solid .white-solid {
+        display:none;
+    }
 }
