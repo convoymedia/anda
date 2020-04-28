@@ -3094,4 +3094,8 @@ button:hover {
     .inner-quote {
         padding:30px;
     }
+
+    .get_in_touch {
+        background:transparent;
+    }
 }
