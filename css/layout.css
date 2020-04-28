@@ -3114,7 +3114,7 @@ button:hover {
     }
 
     .first h2, .first div {
-        width:100%;
+        width:100% !important;
         overflow:visible;
     }
 
