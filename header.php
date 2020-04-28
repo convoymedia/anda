@@ -42,7 +42,13 @@
 			nextArrow: '<div class="slick-next"></div>',
         	prevArrow: '<div class="slick-prev"></div>',
 			responsive: [{
-      			breakpoint: 1100,
+				breakpoint: 1230,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			}, {
+      			breakpoint: 1000,
       			settings: "unslick"
     		}]
 		});
