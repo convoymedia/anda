@@ -25,6 +25,10 @@ body {
     display:none;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 button, .bliss_loadmore {
     color:white;
     font-family: 'Montserrat', sans-serif;
@@ -2082,7 +2086,7 @@ button:hover {
         line-height:35px;
     }
 
-    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div {
+    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div, .product-text p {
         font-size:15px !important;
     }
 
@@ -2420,7 +2424,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2, .the-product .product-text h2 {
         font-size:28px;
     }
 
@@ -2956,5 +2960,26 @@ button:hover {
 
     .product-item > div {
         font-size:15px;
+    }
+
+    .single h1 {
+        font-size:18px;
+    }
+
+    .the-product {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        width: 80%;
+        max-width: unset;
+        align-content: unset;
+    }
+
+    .product-imager {
+        width:100%;
+    }
+
+    .the-product.product-text {
+        width:100%;
     }
 }
