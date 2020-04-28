@@ -2980,7 +2980,7 @@ button:hover {
         width:100%;
     }
 
-    .the-product .product-text, .product-imagery {
+    .the-product .product-text {
         width:100%;
     }
 
@@ -2990,5 +2990,9 @@ button:hover {
 
     .the-product .product-text {
         overflow:visible;
+    }
+
+    .product-imagery {
+        width:100% !important;
     }
 }
