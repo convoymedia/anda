@@ -2973,13 +2973,22 @@ button:hover {
         width: 80%;
         max-width: unset;
         align-content: unset;
+        overflow:visible;
     }
 
     .product-imager {
         width:100%;
     }
 
-    .the-product .product-text {
+    .the-product .product-text, .product-imagery {
         width:100%;
+    }
+
+    .product-text h2 {
+        margin-top:26px;
+    }
+
+    .the-product .product-text {
+        overflow:visible;
     }
 }
