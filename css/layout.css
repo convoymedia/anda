@@ -2082,7 +2082,7 @@ button:hover {
         line-height:35px;
     }
 
-    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p {
+    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div {
         font-size:15px !important;
     }
 
@@ -2420,7 +2420,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3 {
         font-size:28px;
     }
 
