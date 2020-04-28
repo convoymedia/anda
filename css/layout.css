@@ -2915,4 +2915,14 @@ button:hover {
     .form-holder .Checkbox {
         width:100%;
     }
+
+    .form-holder textarea {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .form-holder .half {
+        font-size:16px;
+    }
 }
