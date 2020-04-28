@@ -1,6 +1,6 @@
 <div class="recent_articles" style="position:relative;display:block">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/inv-holder.png" />
-    <div style="position:absolute;top:0px;left:0px;width:100%;height:75%;background:#333333;"></div>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/inv-holder.png" style="display:none;"/>
+    <div style="position:absolute;top:0px;left:0px;width:100%;height:45%;background:#333333;"></div>
         <div class="rp-holder">
             <h2><?php the_sub_field("title"); ?></h2>
             <div class="recent-posts">
