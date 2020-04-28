@@ -2834,6 +2834,7 @@ button:hover {
 
     .text-side {
         width:100%;
+        overflow:visible;
     }
 
     .blog_left_text_right {
