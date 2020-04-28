@@ -2077,7 +2077,7 @@ button:hover {
         margin-bottom:27px;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .text_block h2 {
         font-size:35px;
         line-height:35px;
     }
@@ -2420,7 +2420,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3 {
+    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2 {
         font-size:28px;
     }
 
@@ -2924,5 +2924,37 @@ button:hover {
 
     .form-holder .half {
         font-size:16px;
+    }
+
+    .text-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text-content {
+        width:80%;
+    }
+
+    .text-holder {
+        font-size:15px;
+    }
+
+    .text-content h2::after {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .product-item {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-item h3 {
+        font-size:22px;
+    }
+
+    .product-item > div {
+        font-size:15px;
     }
 }
