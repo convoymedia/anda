@@ -2870,4 +2870,41 @@ button:hover {
         padding: unset;
         overflow: visible;
     }
+
+    .icon-text > div > h3 {
+        margin-top:20px;
+    }
+
+    .touch-holder img {
+        display:none;
+    }
+
+    .the-text-holder {
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 100%;
+        max-width: unset;
+        color: black;
+    }
+
+    .form-holder {
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .get_in_touch h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .form-holder .half {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
