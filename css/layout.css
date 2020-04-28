@@ -2420,7 +2420,7 @@ button:hover {
         margin-bottom:60px !important;
     }
 
-    .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2, .the-product .product-text h2, h2 {
+    .first h2, .text_left_image_right .overlay h2, .two_column_image_text h2, .text_content_area h2, .image_left_text_right .overlay h2, .recent_articles h2, .form h2, .image_content_box h2, .icon-text > div > h3, .text_block h2, .the-product .product-text h2, h2 {
         font-size:28px;
     }
 
@@ -3101,5 +3101,55 @@ button:hover {
 
     .light_grey_solid .white-solid {
         display:none;
+    }
+
+    .empty {
+        display:none;
+    }
+
+    .first {
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .first > * {
+        width:100%;
+        overflow:visible;
+    }
+
+    .first p {
+        font-size:15px;
+    }
+
+    .icon_left_text_right {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .text-block-moduless {
+        padding-top:50px;
+    }
+
+    .text-block-moduless h2 {
+        margin-bottom:40px;
+    }
+
+    .text-block-modules {
+        flex-direction: column;
+    }
+
+    .text-block-modules > div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .text-block-modules .img {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
