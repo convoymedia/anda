@@ -2962,7 +2962,7 @@ button:hover {
         font-size:15px;
     }
 
-    .single h1 {
+    .single h1, , .search h1, .category h1 {
         font-size:18px;
     }
 
@@ -2994,5 +2994,27 @@ button:hover {
 
     .product-imagery {
         width:100% !important;
+    }
+
+    .blog .blob-holder, .search .blob-holder, .category .blob-holder {
+        margin-bottom:0px;
+    }
+
+    .text_block {
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+
+    .filter {
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filter a {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
     }
 }
