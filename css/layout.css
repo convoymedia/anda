@@ -914,6 +914,12 @@ h1 {
     display:block;
 }
 
+.image_content_box h2 {
+    position: relative;
+    color: white;
+    padding-top: 85px;
+}
+
 .team-members {
     position:relative;
     display:flex;
