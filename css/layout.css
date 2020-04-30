@@ -22,7 +22,7 @@ body {
 }
 
 .container2 {
-    max-width:1235px;
+    max-width:1235px !important;
 }
 
 .show-mobile {
