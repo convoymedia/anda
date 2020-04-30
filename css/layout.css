@@ -21,6 +21,10 @@ body {
     display:block;
 }
 
+.container2 {
+    max-width:1235px;
+}
+
 .show-mobile {
     display:none;
 }

@@ -57,7 +57,7 @@
     </div>
 </div>
 <?php } ?>
-<div class="container">
+<div class="container container2">
 	<div class="filter">
 		<div>
 		<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">All</a>
