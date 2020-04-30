@@ -602,8 +602,9 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 600;
-    margin-bottom: 85px;
-    margin-top:116px;
+    padding-top:116px;
+    display:block;
+    position:relative;
 }
 
 .recent-posts .post {
