@@ -502,7 +502,7 @@ h2 {
     color: #333333;
 }
 
-.text_content_area .column-holder div > * {
+.text_content_area .column-holder div > *, .text_content_area .column-holder a > * {
     width:100%;
     
 }
