@@ -37,6 +37,12 @@ rs-fullwidth-wrap {
     z-index:1001;
 }
 
+.get_in_touch_header {
+    z-index: 1001;
+    display: block;
+    position: relative;
+}
+
 button, .bliss_loadmore {
     color:white;
     font-family: 'Montserrat', sans-serif;
@@ -2304,7 +2310,7 @@ button:hover {
     .main-posts .post {
         display:block !important;
     }
-    
+
     .show-mobile {
         display:block;
     }
