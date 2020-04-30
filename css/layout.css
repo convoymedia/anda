@@ -1475,17 +1475,18 @@ button.white {
     width:100%;
     height:auto;
     position:relative;
+    z-index:10;
 }
 
 .icon_left_text_right h2::after {
     display: block;
     content: ' ';
-    position: absolute;
-    right: -250px;
-    top: 50%;
+    position: relative;
     width: 250px;
     height: 1px;
     border-bottom: 1px solid black;
+    margin-top: 25px;
+    margin-left: -25px;
 }
 
 .icon_left_text_right h2 + div {
