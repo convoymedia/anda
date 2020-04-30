@@ -6,10 +6,18 @@
             while(have_rows("column")) {
                 the_row();
                 ?>
+                <?php if (get_sub_field("link")) { ?>
+                    <a href="<?php the_sub_field("link"); ?>">
+                <?php } else { ?>
                 <div>
+                <?php } ?>
                     <img src="<?php the_sub_field("image"); ?>" />
                     <?php the_sub_field("text"); ?>
-                </div>
+                <?php if (get_sub_field("link")) { ?>
+                    </a>
+                <?php } else { ?>
+                    </div>
+                <?php } ?>
                 <?php
             }
         }
