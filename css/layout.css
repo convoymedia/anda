@@ -29,6 +29,10 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+.rs-fullwidth-wrap {
+    z-index:1001;
+}
+
 button, .bliss_loadmore {
     color:white;
     font-family: 'Montserrat', sans-serif;
