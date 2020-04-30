@@ -3180,7 +3180,7 @@ button:hover {
         width:80% !important;
         margin-left:auto;
         margin-right:auto;
-        padding-left:0px;
+        padding-left:0px !important;
     }
 
     .first h2, .first div {
