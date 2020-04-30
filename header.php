@@ -53,24 +53,6 @@
     		}]
 		});
 
-		$('.recent-posts').slick({
-  			infinite: true,
-  			slidesToShow: 4,
-  			slidesToScroll: 4,
-			nextArrow: '<div class="slick-next"></div>',
-        	prevArrow: '<div class="slick-prev"></div>',
-			responsive: [{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3
-				}
-			}, {
-      			breakpoint: 1000,
-      			settings: "unslick"
-    		}]
-		});
-
 		$('.quotes').slick({
   			infinite: true,
 			speed: 500,
