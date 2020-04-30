@@ -4,7 +4,7 @@
     <div class="first">
         <h2>
             <?php the_sub_field("title"); ?>
-            <div><img src="<?php the_sub_field("image"); ?>" /></div>
+            <div><img src="<?php the_sub_field("image"); ?>" class="hide-mobile" /></div>
         </h2>
         <div><?php the_sub_field("text");?></div>
     </div>
