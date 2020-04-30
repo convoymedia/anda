@@ -29,7 +29,7 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.rs-fullwidth-wrap {
+rs-fullwidth-wrap {
     z-index:1001;
 }
 
