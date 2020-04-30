@@ -1489,10 +1489,6 @@ button.white {
     margin-left: -25px;
 }
 
-.icon_left_text_right h2 + div {
-    margin-top:74px;
-}
-
 .the-product {
     display:flex;
     position:relative;
