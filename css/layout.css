@@ -1477,7 +1477,7 @@ button.white {
     position:relative;
 }
 
-.icon_left_text_right h2 div::after {
+.icon_left_text_right h2::after {
     display: block;
     content: ' ';
     position: absolute;
@@ -2041,6 +2041,10 @@ button:hover {
 @media only screen and (max-width: 1880px) {
     .get-in-touch {
         right:-125px;
+    }
+
+    .icon_left_text_right h2 {
+        font-size:40px;
     }
 }
 
