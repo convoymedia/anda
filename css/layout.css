@@ -2323,14 +2323,14 @@ button:hover {
         display:none;
     }
 
-    * {
+    /** {
         max-width:100%;
         overflow-x:hidden;
     }
 
     rs-fullwidth-wrap {
         overflow-x:unset;
-    }
+    }*/
 
     /* mobile stuff */
 
