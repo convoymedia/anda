@@ -2334,6 +2334,10 @@ button:hover {
 
     /* mobile stuff */
 
+    .loopholder {
+        width:auto;
+    }
+
     .tbar {
         padding-top:5px;
     }
@@ -2685,6 +2689,7 @@ button:hover {
         max-height: 0px;
         margin-bottom: 5px;
         transition:all linear .5s;
+        overflow:hidden;
     }
 
     .grow {
