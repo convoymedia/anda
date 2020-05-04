@@ -17,7 +17,6 @@ body {
     overflow-x:hidden;
 }
 
-
 .hide-mobile {
     display:block;
 }
@@ -2327,6 +2326,10 @@ button:hover {
     * {
         max-width:100%;
         overflow-x:hidden;
+    }
+
+    rs-fullwidth-wrap {
+        overflow-x:unset;
     }
 
     /* mobile stuff */
