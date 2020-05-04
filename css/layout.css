@@ -17,9 +17,6 @@ body {
     overflow-x:hidden;
 }
 
-rs-fullwidth-wrap, rs-fullwidth-wrap > * {
-    overflow:visible !important;
-}
 
 .hide-mobile {
     display:block;
