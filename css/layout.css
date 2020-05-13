@@ -3246,6 +3246,24 @@ button:hover {
         text-align: center;
         justify-content: center;
     }
+
+    .recent_articles {
+        background:#333333;
+        margin:0px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .recent_articles h2 {
+        margin-top:0px;
+        padding-top:40px;
+    }
+
+    .blob-holder {
+        width:150%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3260,7 +3278,7 @@ button:hover {
 
     .image_left_text_right {
         background: #575756;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     .image_left_text_right .overlay h2 {
