@@ -3279,8 +3279,12 @@ button:hover {
         color:white;
     }
 
-    .coloured-box h2, .image_content_box h2 {
-        color:#575756;
+    .image_content_box {
+        background:#575756;
+    }
+
+    .image_content_box h2 {
+        margin-top:0px;
     }
 }
 
