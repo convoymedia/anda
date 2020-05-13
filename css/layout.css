@@ -3264,6 +3264,11 @@ button:hover {
     .blob-holder {
         width:150%;
     }
+
+    .the-blob {
+        position: relative;
+        margin-left: -15%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
