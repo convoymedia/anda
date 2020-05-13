@@ -3269,6 +3269,11 @@ button:hover {
         position: relative;
         margin-left: -15%;
     }
+
+    .blob1 h1, .blob2 h1, .blob3 h1, .blob4 h1, .blob5 h1 {
+        left: 40%;
+        width: 27%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
