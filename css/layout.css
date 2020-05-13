@@ -3247,3 +3247,31 @@ button:hover {
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .text_content_area .column-holder {
+        flex-direction:column;
+
+    }
+
+    .text_content_area .column-holder div {
+        font-size:24px;
+    }
+
+    .image_left_text_right {
+        background: #575756;
+        padding-top: 30px;
+    }
+
+    .image_left_text_right .overlay h2 {
+        color:white;
+    }
+
+    .image_left_text_right .overlay h2::after {
+        border-bottom:2px solid white;
+    }
+
+    .image_left_text_right .overlay p {
+        color:white;
+    }
+}
