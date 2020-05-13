@@ -3286,6 +3286,24 @@ button:hover {
     .image_content_box h2 {
         margin-top:0px;
     }
+    body {
+        overflow-x:hidden;
+    }
+
+    .text_left_image_right.dark_grey_solid {
+        background:#575756;
+    }
+    .text_left_image_right .overlay {
+        background:transparent;
+    }
+
+    .dark_grey_solid .overlay h2, .dark_grey_solid .overlay p, .dark_grey_solid .overlay h2, .dark_grey_solid .overlay p {
+        color:white;
+    }
+    
+    .dark_grey_solid .overlay h2::after {
+        border-bottom:2px solid white;
+    }
 }
 
 @media only screen and (max-width: 768px) {
