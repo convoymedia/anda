@@ -3321,9 +3321,33 @@ button:hover {
         margin-top:0px !important;
         margin-bottom:0px !important;
     }
+
+    .get_in_touch p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .get_in_touch .wpcf7-form-control-wrap {
+        width:48%;
+    }
+
+    .get_in_touch .form-holder .half {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .get_in_touch .wpcf7-form-control-wrap.Message {
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .icon-text > img {
+        width: 170px;
+    }
+
     .text_content_area .column-holder {
         flex-direction:column;
 
