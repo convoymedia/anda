@@ -3274,6 +3274,14 @@ button:hover {
         left: 40%;
         width: 27%;
     }
+
+    .recent_articles h2 {
+        color:white;
+    }
+
+    .coloured-box h2, .image_content_box h2 {
+        color:#575756;
+    }
 }
 
 @media only screen and (max-width: 768px) {
