@@ -3298,7 +3298,7 @@ button:hover {
     }
 
     .dark_grey_solid .overlay h2, .dark_grey_solid .overlay p, .dark_grey_solid .overlay h2, .dark_grey_solid .overlay p {
-        color:white;
+        color:white !important;
     }
     
     .dark_grey_solid .overlay h2::after {
