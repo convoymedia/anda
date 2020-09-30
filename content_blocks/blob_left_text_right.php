@@ -1,7 +1,7 @@
 <div class="blog_left_text_right">
     <div class="points-holder">
         <div class="header-holder">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/back1.png" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php the_sub_field("style"); ?>.png" />
             <h2><?php the_sub_field("title"); ?></h2>
         </div>
         <div class="text-side">

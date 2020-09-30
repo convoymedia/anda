@@ -20,7 +20,7 @@
         <div>
             <h3 style="color:<?php echo $text_color; ?>!important"><?php the_sub_field("title"); ?></h3>
             <div style="color:<?php echo $text_color; ?>!important"><?php the_sub_field("text"); ?></div>
-            <a href="<?php the_sub_field("button_link"); ?>"><button style="background-color:<?php echo $button_color; ?>!important"><?php the_sub_field("button_title"); ?></button></a>
+            <a href="<?php the_sub_field("button_link"); ?>"><button style="background-color:#B38F16!important"><?php the_sub_field("button_title"); ?></button></a>
         </div>
     </div>
 </div>

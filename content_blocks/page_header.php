@@ -37,6 +37,12 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/blob5.png" class="blob"/>
                 <?php   
                 break;
+                case "awards":
+                    ?>
+                    <?php $image = wp_get_attachment_image_src(get_sub_field("image"), "full"); ?>
+                    <img src="<?php echo $image[0]; ?>"/>
+                    <?php
+                break;
             }
         ?>
     </div>

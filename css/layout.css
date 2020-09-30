@@ -13,9 +13,17 @@
 br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 } /* Use this br class to clear your floated columns */
 li#theme-switcher { background:#fff; border:10px solid red; padding:20px; position:fixed; top:0; right:0 } /* Use this if you have the Theme Switcher Reloaded plugin (http://themebot.com/webmaster-tools/1-wordpress-theme-switcher-reloaded) installed and want to make it nice and obvious */
 
-/*body {
+.column-holder img {
+    transition: transform .5s ease;
+}
+
+.column-holder img:hover {
+    transform: scale(1.3);
+}
+
+body {
     overflow-x:hidden;
-}*/
+}
 
 .hide-mobile {
     display:block;
@@ -99,7 +107,7 @@ h2 {
     position:relative;
     width:100%;
     height: 44px;
-    background-color:#575756;
+    background-color:#B18E2F;
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
@@ -237,7 +245,7 @@ h2 {
     display:block;
     width:39px;
     height:1px;
-    background:white;
+    background:#B18E2F;
     content: ' ';
     margin-bottom:10px;
 }
@@ -268,8 +276,8 @@ h2 {
 #extra-footer {
     position:relative;
     display:block;
-    background:white;
-    color:#333333;
+    background:#B18E2F;
+    color:white;
     font-family: 'Montserrat', sans-serif;
     font-size:15px;
     font-weight:300;
@@ -342,6 +350,20 @@ h2 {
     margin-left: 17%;
 }
 
+.text_left_image_right.dark_grey_solid {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.text_left_image_right.dark_grey_solid .overlay {
+    position:relative;
+    top:unset;
+    left:unset;
+    margin:0px;
+}
+
 .text_left_image_right .overlay h2 {
     font-family: 'Montserrat', sans-serif;
     font-size:45px;
@@ -357,7 +379,7 @@ h2 {
     content:' ';
     width:300px;
     height:1px;
-    border-bottom:2px solid black;
+    border-bottom:2px solid #B18E2F;
     margin-left:-100px;
     margin-top:37px;
     margin-bottom:37px;
@@ -375,13 +397,17 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size:20px;
     font-weight:300;
-    background:#333333;
+    background:#B38F16 !important;
     outline: none;
     border: none;
     padding: 10px 45px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top:35px;
+}
+
+.points-holder button {
+    background:#B38F16 !important;
 }
 
 .two_column_image_text {
@@ -426,6 +452,7 @@ h2 {
     font-size:33px;
     font-weight:600;
     color:#E3E3E3;
+    position:relative;
 }
 
 .two_column_image_text .column-holder h3 img {
@@ -437,9 +464,14 @@ h2 {
 
 .two_column_image_text .column-holder .blob-text {
     position: absolute;
-    display: block;
-    margin-top: -130px;
-    margin-left: 30px;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    left: -2%;
 }
 
 .two_column_image_text .column-holder p {
@@ -503,18 +535,32 @@ h2 {
 }
 
 .text_content_area .column-holder div, .text_content_area .column-holder a {
-    width:20%;
+    width:21%;
     font-family: 'Montserrat', sans-serif;
-    font-size:32px;
+    font-size:24px;
     font-weight:400;
     font-style: italic;
     text-decoration:none;
     color: #333333;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .text_content_area .column-holder div > *, .text_content_area .column-holder a > * {
-    width:100%;
-    
+    width: 200px;
+height: 200px;
+object-fit: scale-down;
+margin-bottom: 10px;
+}
+
+.iltr-test{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    position: absolute;
 }
 
 .image_left_text_right {
@@ -522,12 +568,26 @@ h2 {
     display:block;
     overflow:hidden;
     margin-bottom: -5px;
+    background: #575756;
 }
 
 .image_left_text_right .main-image {
     position: relative;
     width: 100%;
     z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-bottom: -1px;
+}
+
+.iltr-overlay {
+    position: relative;
+    width: 37%;
+    margin-left: 55%;
+    margin-top: 15%;
+    z-index: 100;
+    padding-bottom: 10%;
 }
 
 .image_left_text_right .underlay-image {
@@ -548,28 +608,71 @@ h2 {
     margin-right: 17%;
 }
 
-.image_left_text_right .overlay h2 {
+.image_left_text_right .iltr-overlay h2 {
     font-family: 'Montserrat', sans-serif;
     font-size:45px;
     font-weight:600;
-    color:white;
+    color:rgb(60,60,60);
     text-align:left;
     margin-bottom:0px;
 }
 
-.image_left_text_right .overlay h2:after {
+.sgd h2 {
+    color:white !important;
+}
+
+.text_area li {
+    margin-bottom: 20px;
+    list-style: disc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.d2 {
+    display: flex;
+align-items: center;
+flex-direction: row;
+background:#333333 !important;
+}
+
+.d2 h2 {
+    color:white !important;
+}
+
+.dark2 {
+    position: relative;
+    width: 35%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.dark2 img {
+    height:100%;
+    width:auto;
+    max-height:700px;
+}
+
+.d2 .iltr-overlay {
+	position: relative;
+	width: 37%;
+	 margin-left: unset; 
+     margin-top: unset; 
+	z-index: 100;
+	padding-bottom: unset;
+}
+
+.image_left_text_right .iltr-overlay h2:after {
     display:block;
     position:relative;
     content:' ';
     width:300px;
     height:1px;
-    border-bottom:2px solid white;
+    border-bottom:2px solid #B38F16;
     margin-left:-100px;
     margin-top:37px;
     margin-bottom:37px;
 }
 
-.image_left_text_right .overlay p {
+.image_left_text_right .iltr-overlay p {
     font-family: 'Montserrat', sans-serif;
     font-size:20px;
     font-weight:300;
@@ -577,7 +680,7 @@ h2 {
     color:white;
 }
 
-.image_left_text_right .overlay a button {
+.image_left_text_right .iltr-overlay a button {
     color:#333333 !important;
     font-family: 'Montserrat', sans-serif;
     font-size:20px !important;
@@ -895,8 +998,9 @@ h1 {
     float:right;
     margin-right:10%;
     margin-top:10%;
-    background-size:contain;
+    background-size:cover;
     background-position:center center;
+    background-repeat:no-repeat;
 }
 
 .light_grey_solid {
@@ -1034,7 +1138,11 @@ h1 {
 }
 
 .text_quote.dark .who-said-it::before {
-    border-top: 1px solid white;
+    border-top: 1px solid #B18E2F;
+}
+
+.text_quote.light .who-said-it::before {
+    border-top: 1px solid #B18E2F;
 }
 
 .the-quote {
@@ -1045,6 +1153,63 @@ h1 {
     font-weight: 400;
     color:#333333;
     padding:70px;
+}
+
+.image-holder-test {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text_left_image_right.shades_grey_curved {
+    background:#e3e3e3;
+}
+
+.text_left_image_right.shades_grey_curved h2 {
+    margin-bottom:0px;
+}
+
+.image_left_text_right .iltr-overlay h2 {
+    font-size:28px;
+}
+
+.h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: #E3E3E3;
+    position: relative;
+    display: inline-block;
+    margin-top: -155px;
+}
+
+.text_left_image_right.shades_grey_curved h2::after {
+    content: ' ';
+    display: block;
+    position: relative;
+    content: ' ';
+    width: 300px;
+    height: 1px;
+    border-bottom: 2px solid #B18E2F;
+    margin-left: -100px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.overlay-test {
+    position: relative;
+    width: 29%;
+    color: black;
+    z-index: 10;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-bottom: 5%;
+}
+
+.overlay-test h2 {
+    text-align:left;
 }
 
 .the-quote::before {
@@ -1087,7 +1252,14 @@ h1 {
     margin-right:auto;
     border-top:1px solid #333333;
     margin-top:55px;
-    margin-bottom:2px;
+    margin-bottom:15px;
+}
+
+.text_left_image_right.dark_gray_solid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .dark_grey_solid {
@@ -1102,8 +1274,8 @@ h1 {
     height: 630px;
     width: auto;
     display: inline-block;
-    float: right;
-    margin-right: 10%;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .dark_grey_solid h2, .dark_grey_solid p {
@@ -1112,7 +1284,7 @@ h1 {
 
 
 .dark_grey_solid .overlay h2::after {
-    border-bottom:2px solid white;
+    border-bottom:2px solid #B38F16;
 }
 
 .blog_left_text_right {
@@ -1126,9 +1298,10 @@ h1 {
 .points-holder{
     display:flex;
     position:relative;
-    width:50%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
+    align-items: flex-start;
 }
 
 .blog_left_text_right + .blog_left_text_right {
@@ -1168,14 +1341,14 @@ p {
 .header-holder h2 {
     position: absolute;
     top: 0px;
-    left: 0px;
-    width: 100%;
+    left: 5%;
+    width: 90%;
     margin: 0px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
-    line-height: 810%;
+    align-items:center;
 }
 
 .text_block {
@@ -1304,7 +1477,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    background: #333333;
+    background: #B38F16;
     outline: none;
     border: none;
     padding: 10px 45px;
@@ -1479,6 +1652,9 @@ button.white {
     position: absolute;
     top: -33px;
     left: -250px;
+    /* new */
+    margin-top: 100px;
+    left: -240px;
 }
 
 .icon_left_text_right h2 img {
@@ -1614,14 +1790,12 @@ button.white {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .main-posts .post {
-    margin-left:0px;
-    margin-right:0px;
     width:380px;
-    margin-bottom:25px;
+    margin:25px;
 }
 
 .post-content {
@@ -1780,7 +1954,47 @@ button.white {
 }
 
 .dark_grey_curved .overlay h2::after {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #B38F16;
+}
+
+.text-block-moduless .p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 85px;
+    text-align: center;
+}
+
+.blob-holder.awards {
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blob-holder.awards > * {
+    width:50%;
+}
+
+.blob-holder.awards .the-blob {
+    text-align:center;
+}
+
+.blob-holder.awards h1 {
+    color:#585857;
+}
+
+.text_content_area .text {
+    color:rgb(50,50,50);
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 85px;
+}
+
+.f30 {
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .filter {
@@ -2033,6 +2247,31 @@ hr {
     border: none;
 }
 
+.sg > div {
+    display:flex;flex-direction:row;justify-content:space-around;align-items:center;
+}
+
+.sg > div img {
+    max-width:550px;
+}
+
+.sg .image-text {
+    text-align:center;
+    margin-top:15px;
+}
+
+.sg .iltr-overlay {
+    margin-left:0px;
+    color:#333333;
+    margin-top:7%;
+    margin-bottom:7%;
+    padding-bottom:0px;
+}
+
+.sg p {
+    color:#333333 !important;
+}
+
 .the-text-holder a {
     color:white;
 }
@@ -2043,6 +2282,35 @@ button {
 
 button:hover {
     opacity:.7;
+}
+
+/* contact page fixes */
+.get_in_touch .touch-holder {
+    height: 80vh;
+    display: flex;
+    background-image: url(http://anda-test-uk.stackstaging.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/09/contact-background.png.webp);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.get_in_touch .the-text-holder {
+    left:auto;
+    top:auto;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch .form-holder {
+    position: absolute;
+    right: 11%;
+    top: 20%;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding: 33px;
+    width: 35%;
 }
 
 @media only screen and (max-width: 1880px) {
@@ -2110,11 +2378,35 @@ button:hover {
     #menu-main-navigation {
         margin-right:60px;
     }
+
+    .white-solid {
+        height:550px;
+    }
 }
 
 @media only screen and (max-width: 1590px) {
+    .form-holder {
+        position: absolute;
+        right: 8%;
+        top: 2%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        padding: 70px;
+        width: 35%;
+    }
+
+
     #menu-main-navigation {
         margin-right:80px;
+    }
+
+    .text_content_area .column-holder div > *, .text_content_area .column-holder a > * {
+        width:100%;
+        height:auto;
+    }
+
+    .text_content_area .column-holder div, .text_content_area .column-holder a {
+        font-size:18px;
     }
 }
 
@@ -2122,6 +2414,8 @@ button:hover {
     #menu-main-navigation {
         margin-right:100px;
     }
+
+
 
     .text_left_image_right .overlay h2::after {
         margin-top:27px;
@@ -2133,7 +2427,7 @@ button:hover {
         line-height:35px;
     }
 
-    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div, .product-text p {
+    .text_left_image_right .overlay p, .two_column_image_text .column-holder p, .image_left_text_right .overlay p, .icon-text > div > div, .product-text p, .iltr-overlay p, .sg p {
         font-size:15px !important;
     }
 
@@ -2141,7 +2435,7 @@ button:hover {
         font-size:18px !important;
     }
 
-    .two_column_image_text .column-holder h3, .text_content_area .column-holder div, .form p {
+    .two_column_image_text .column-holder h3, .form p {
         font-size:28px;
     }
 
@@ -2166,13 +2460,6 @@ button:hover {
     }
 }
 
-@media only screen and (max-width:1408px) {
-    .post-text button {
-        padding: 10px 0px !important;
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 1450px) {
     #menu-main-navigation {
         margin-right:140px;
@@ -2181,11 +2468,68 @@ button:hover {
     #topbar .smaller {
         max-width:1000px;
     }
+
+    .form-holder {
+        position: absolute;
+        right: 8%;
+        top: 6%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        padding: 53px;
+        width: 35%;
+    }
+
+    .get_in_touch h2 {
+        font-weight: 300;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+
+    .form-holder .half {
+        width: 39%;
+        background-color: transparent;
+        padding: 7px 14px 7px 14px;
+        margin-right: 3%;
+        margin-bottom: 12px;
+        outline: none;
+        border: 1px solid #333333;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333333;
+    }
+
+    .form-holder textarea {
+        padding: 7px 14px 7px 14px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #333;
+        width: 89.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333333;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .white-solid {
+        height: 450px;
+    }
 }
 
 @media only screen and (max-width: 1410px) {
     #menu-main-navigation {
         margin-right:160px;
+    }
+}
+
+@media only screen and (max-width:1408px) {
+    .post-text button {
+        padding: 10px 0px !important;
+        width: 100%;
     }
 }
 
@@ -2232,6 +2576,14 @@ button:hover {
     .text_area > div {
         width:80% !important;
     }
+
+    .text-block-moduless {
+        padding-top: 110px;
+        padding-bottom: 35px;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 1287px) {
@@ -2254,6 +2606,38 @@ button:hover {
 
     .text_left_image_right .overlay a button, .image_left_text_right .overlay a button {
         margin-top:15px;
+    }
+}
+
+@media only screen and (max-width: 1276px) {
+    .form-holder .half {
+        width:39%;
+    }
+}
+
+@media only screen and (max-width: 1207px) {
+    .form-holder .half {
+        width: 38%;
+    }
+
+    .form-holder textarea {
+        padding: 7px 14px 7px 14px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #333;
+        width: 89.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333333;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .white-solid {
+        height: 350px;
     }
 }
 
@@ -2289,7 +2673,27 @@ button:hover {
     }
 }
 
+@media only screen and (max-width:1092px) {
+    .form-holder .half {
+        width:37%;
+    }
+}
+
 @media only screen and (max-width:1050px) {
+    .sg > div {
+        flex-direction:column-reverse;
+        padding-bottom:7%;
+    }
+
+    .sg .iltr-overlay {
+        width:80%;
+    }
+
+    .sg > div img {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
     .image_left_text_right .overlay h2::after, .text_left_image_right .overlay h2::after {
         margin-left: -50px;
     }
@@ -2306,6 +2710,22 @@ button:hover {
 }
 
 @media only screen and (max-width:1000px) {
+    .dark2 {
+        display:none;
+    }
+
+    .d2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text_left_image_right.dark_grey_curved .flex-wrap img {
+        display:none;
+    }
+
+    .text-block-modules {
+        text-align:center;
+    }
 
     .main-posts .post {
         display:block !important;
@@ -2374,7 +2794,7 @@ button:hover {
     }
 
     .logo img {
-        width: 35%;
+        /*width: 35%;*/
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -2577,9 +2997,6 @@ button:hover {
     }
 
     .two_column_image_text .column-holder .blob-text {
-        position: absolute;
-        display: block;
-        margin-top: -100px;
         font-size: 24px;
     }
 
@@ -2603,6 +3020,14 @@ button:hover {
         font-size: 12px;
     }
 
+    .text_content_area .column-holder a {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
     .text_content_area .column-holder div .column-holder h3 {
         width: 90%;
         padding-left: 5%;
@@ -2624,7 +3049,7 @@ button:hover {
     }
 
     .loopholder .wpcf7-form-control-wrap.email {
-        top:48%;
+        top:50%;
     }
 
     .loopholder .wpcf7-form-control.email {
@@ -2638,9 +3063,9 @@ button:hover {
     .loopholder .submit {
         position: absolute;
         top: auto;
-        bottom: 25px;
+        bottom: 100px;
         margin: 0;
-        right: 25%;
+        right: 15%;
     }
 
     #footer {
@@ -2672,15 +3097,12 @@ button:hover {
     }
 
     #extra-footer {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 15px;
+        width: 100%;
     }
 
     #footer .fifth img {
         max-width: 100%;
-        width: 50%;
+        /*width: 50%;*/
         height: auto;
         padding-bottom: 20px;
     }
@@ -2918,6 +3340,16 @@ button:hover {
         flex-direction:column;
         width:80%;
         overflow:visible;
+        align-items:center;
+    }
+
+    .image_left_text_right .iltr-test {
+        display:none;
+    }
+
+    .image_left_text_right .iltr-overlay {
+        width: 70%;
+        margin-left: 15%;
     }
 
     .header-holder h2 {
@@ -3184,9 +3616,9 @@ button:hover {
         padding:30px;
     }
 
-    .get_in_touch {
+    /*.get_in_touch {
         background:transparent !important;
-    }
+    }*/
 
     /*body {
         overflow:hidden;
@@ -3302,7 +3734,7 @@ button:hover {
     }
     
     .dark_grey_solid .overlay h2::after {
-        border-bottom:2px solid white;
+        border-bottom:2px solid #B38F16;
     }
 
     .header-holder {
@@ -3341,9 +3773,83 @@ button:hover {
     .get_in_touch .wpcf7-form-control-wrap.Message {
         width:100%;
     }
+
+    .get_in_touch br {
+        display:none;
+    }
+
+    .get_in_touch {
+        background-image: url(../images/form-back.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+        padding-top: 70px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .filter {
+        background:none;
+    }
+
+    .filter a {
+        background: black;
+        padding: 3px 15px;
+        border-radius: 25px;
+        background: black;
+        padding: 3px 15px;
+        border-radius: 25px;
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    #s {
+        color:black;
+    }
+
+    #searchsubmit {
+        border: none;
+        box-shadow: none;
+        padding: 0px !important;
+        font-size: 16px !important;
+        margin: 0px !important;
+        color: black;
+        background: transparent !important;
+    }
+
+    .recent-posts.main-posts {
+        width:80%;
+    }
+
+    .get_in_touch .the-text-holder {
+        color:white;
+    }
+
+    .page-id-22 .get_in_touch {
+        background:none;
+    }
+
+    .page-id-22 .get-in-touch {
+        margin-top:0px;
+    }
+
+    .shades_grey_curved .overlay {
+        background:#E3E3E3;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .overlay-test {
+        width:60%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .text_left_image_right.light_grey_solid {
+        flex-direction:column;
+    }
+
     .icon-text > img {
         width: 170px;
     }
@@ -3372,5 +3878,63 @@ button:hover {
 
     .image_left_text_right .overlay p {
         color:white;
+    }
+
+    .light_grey_solid .white-solid {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .loopholder .submit {
+        margin-bottom:10px;
+        right:12%;
+        font-size:12px;
+    }
+
+    .loopholder .wpcf7-form-control.email {
+        font-size: 14px;
+    }
+
+    .points-holder h2 {
+        font-size: 26px !important;
+        color: #E3E3E3 !important;
+    }
+}
+
+@media only screen and (max-width: 4804px) {
+    .form-holder .Checkbox {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .loopholder .submit {
+        margin-bottom:12px;
+        right:12%;
+        font-size:12px;
+    }
+
+    .loopholder .wpcf7-form-control.email {
+        font-size: 12px;
+    }
+
+    .loopholder .submit {
+        padding: 10px 25px;
+    }
+
+    .loopholder .submit {
+        margin-bottom: 18px;
+        right: 12%;
+        font-size: 10px;
+        padding: 6px 15px;
     }
 }

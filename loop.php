@@ -36,7 +36,7 @@
 	<?php 
 		$cat_id = get_query_var('cat');
 		if ( !is_front_page() && is_home() ) {
-			?><h1>Articles</h1><?php
+			?><h1>Case Studies</h1><?php
 		}
 		else if ($cat_id) {
 			?><h1>Category: <?php echo get_cat_name($cat_id); ?></h1><?php
@@ -58,7 +58,7 @@
 </div>
 <?php } ?>
 <div class="container container2">
-	<div class="filter">
+	<!-- <div class="filter">
 		<div>
 		<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">All</a>
 			<?php
@@ -73,8 +73,12 @@
 		<ul class="filter-widgets">
 			<?php dynamic_sidebar("blog-filter-widget-area"); ?>
 		</ul>
-	</div>
+	</div> -->
 	<?php if ( !is_front_page() && is_home() ) { ?>
+		<?php
+			$featured = get_field("featured_post", "option"); 
+			if ($featured) { ?>
+		?>
 		<h3>Featured</h3>
 		<div class="featured-post">
 			<?php
@@ -119,7 +123,7 @@
 				</div>
 			</div>
 		</div>
-	<?php } ?>
+	<?php }} ?>
 	<div class="recent-posts main-posts">
 		<div class="the-posts">
 <?php 

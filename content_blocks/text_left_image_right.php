@@ -3,11 +3,13 @@
         switch (get_sub_field("style")) { 
             case "shades_grey_curved":
             ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/shades_grey_curved.png" class="main-image" />
-            <?php $image = wp_get_attachment_image_src(get_sub_field("image"), "shades_grey_curved"); ?>
-            <img src="<?php echo $image[0]; ?>" class="underlay-image" />
-            <img src="<?php echo get_template_directory_uri(); ?>/images/responsive1.png" class="show-mobile" />
-            <div class="overlay">
+            <div class="image-holder-test">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shades_grey_curved.png" class="main-image" />
+                <?php $image = wp_get_attachment_image_src(get_sub_field("image"), "shades_grey_curved"); ?>
+                <img src="<?php echo $image[0]; ?>" class="underlay-image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/responsive1.png" class="show-mobile" />
+            </div>
+            <div class="overlay-test">
                 
                 <h2><?php the_sub_field("title"); ?></h2>
                 <?php the_sub_field("content"); ?>
@@ -43,7 +45,7 @@
                 $image = wp_get_attachment_image_src(get_sub_field("image"), "light_grey_solid"); 
             ?>
             <div class="white-solid" style="display:flex;align-items:center;margin-top:0px;">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/light-grey.png" style="width:100%;height:auto;background-image:url(<?php echo $image[0]; ?>);" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/light-grey.png" style="width:100%;height:auto;background-image:url(<?php echo $image[0]; ?>);background-size:cover;" />
             </div>
             <div class="overlay">
                 <h2><?php the_sub_field("title"); ?></h2>
@@ -65,7 +67,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/dark_grey_solid.png" style="width:100%;height:100%;" />
                 </div>
                 <div class="overlay">
-                    <h2><?php the_sub_field("title"); ?></h2>
+                    <?php if (get_sub_field("title")) { ?><h2><?php the_sub_field("title"); ?></h2><?php } ?>
                     <?php the_sub_field("content"); ?>
                     <?php if (get_sub_field("button_link")) { ?>
                     <a href="<?php the_sub_field("button_link"); ?>">
@@ -73,7 +75,6 @@
                     </a>
                     <?php } ?>
                 </div>
-                <br class="clear" />
             <?php
             break;
 
