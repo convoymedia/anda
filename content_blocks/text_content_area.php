@@ -10,9 +10,9 @@
                 the_row();
                 ?>
                 <?php if (get_sub_field("link")) { ?>
-                    <a href="<?php the_sub_field("link"); ?>">
+                    <a href="<?php the_sub_field("link"); ?>"  data-aos="fade-up">
                 <?php } else { ?>
-                <div>
+                <div  data-aos="fade-up">
                 <?php } ?>
                     <img src="<?php the_sub_field("image"); ?>" />
                     <?php the_sub_field("text"); ?>

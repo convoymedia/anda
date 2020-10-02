@@ -51,7 +51,7 @@
 <div class="text_block">
     <div class="text-content"> 
         <h2><?php the_field("title", "option"); ?></h2>
-        <div class="text-holder">
+        <div class="text-holder" data-aos="fade-up"> 
 			<?php the_field("content", "option"); ?>
 		</div>
     </div>
@@ -80,7 +80,7 @@
 			if ($featured) { ?>
 		?>
 		<h3>Featured</h3>
-		<div class="featured-post">
+		<div class="featured-post" data-aos="fade-up">
 			<?php
 				$featured = get_field("featured_post", "option"); 
 			?>
@@ -130,7 +130,7 @@
 	while (have_posts()) {
 		the_post();
 		?>
-			<div class="post">
+			<div class="post" data-aos="fade-up">
 				<a href="<?php echo get_permalink($post->ID) ?>">
 					<?php echo get_the_post_thumbnail($post->ID, "recent_articles"); ?>
 				</a>

@@ -1,7 +1,26 @@
-
+<?php if (get_the_ID() !== 22) { ?>
+<div class="get_in_touch">
+    <div class="touch-holder">
+        <img src="<?php the_sub_field("image"); ?>" />
+        <div class="form-holder">
+            <h2><?php the_sub_field("title"); ?></h2>
+            <?php echo do_shortcode('[contact-form-7 id="167"]'); ?>
+        </div>
+    </div>
+</div> 
+<style>
+    .get_in_touch .touch-holder {
+        background:none;
+        height:auto;
+    }
+</style>
+<?php
+}
+else {
+    ?>
 <div style="background-color:<?php the_sub_field("background_colour"); ?>" class="test-form">
     <div class="main-bit" style="width: 80%;margin-left: auto;margin-right: auto;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
-        <div class="left-bit" style="color: white;width: 30%;font-family: 'Montserrat', sans-serif;font-size: 20px;font-weight: 600;line-height: 24px;">
+        <div class="left-bit" data-aos="fade-right" style="color: white;width: 30%;font-family: 'Montserrat', sans-serif;font-size: 20px;font-weight: 600;line-height: 24px;">
             <?php the_sub_field("left_text"); ?>
         </div>
         <div class="right-bit" style="background-image:url(<?php the_sub_field("image"); ?>); width:60%;background-size: contain;background-repeat: no-repeat;">
@@ -14,7 +33,7 @@
 </div>  
 </div>
 <style>
-    .test-form input[type="text"], .test-form input[type="email"], .test-form textarea {
+    .page-id-22 .test-form input[type="text"], .test-form input[type="email"], .test-form textarea {
         background-color: transparent;
         padding: 7px 14px 7px 14px;
         margin-bottom: 12px;
@@ -29,54 +48,55 @@
         width:100%;
     }
 
-    .test-form .Checkbox {
+    .page-id-22 .test-form .Checkbox {
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         font-weight: 300;
         color: #333333;
     }
 
-    .test-form  form > p {
+    .page-id-22 .test-form  form > p {
         display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;
     }
 
-    .test-form .wpcf7-form-control-wrap {
+    .page-id-22 .test-form .wpcf7-form-control-wrap {
         position:relative;
         width:48%;
     }
 
-    .test-form .wpcf7-text {
+    .page-id-22 .test-form .wpcf7-text {
         width:100%;
     }
 
-    .Message, .Checkbox {
+    .page-id-22 .Message, .Checkbox {
         width:100% !important;
     }
 
-    .test-form br {
+    .page-id-22 .test-form br {
         display:none;
     }
-    .submit-div {
+    .page-id-22 .submit-div {
         text-align:right;
     }
 
-    .test-form hr {
+    .page-id-22 .test-form hr {
         border-bottom:1px solid #B38F16 !important;
     }
 
     @media only screen and (max-width: 1100px) {
-        .main-bit {
+        .page-id-22 .main-bit {
             flex-direction:column !important;
             padding-top:50px;
             padding-bottom:50px;
         }
 
-        .left-bit, .right-bit {
+        .page-id-22 .left-bit, .right-bit {
             width:100% !important;
         }
 
-        .right-bit > div {
+        .page-id-22 .right-bit > div {
             margin:0px !important;
         }
     }
 </style>
+<?php } ?>

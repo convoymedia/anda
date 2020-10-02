@@ -7,7 +7,7 @@
                 while (have_rows('team')) {
                     the_row();
                     ?>
-                    <div class="team-member">
+                    <div class="team-member" data-aos="fade-up">
                         <img src="<?php the_sub_field("person"); ?>" />
                         <div class="role"><?php the_sub_field("role"); ?></div>
                         <div class="name"><?php the_sub_field("name"); ?></div>

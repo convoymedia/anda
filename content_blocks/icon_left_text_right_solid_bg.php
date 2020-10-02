@@ -16,8 +16,8 @@
 ?>
 <div class="icon_left_text_right_solid_bg" style="background-color:<?php the_sub_field("style"); ?>;">
     <div class="icon-text">
-        <img src="<?php the_sub_field("icon"); ?>" />
-        <div>
+        <img src="<?php the_sub_field("icon"); ?>" data-aos="fade-right" />
+        <div data-aos="fade-left" >
             <h3 style="color:<?php echo $text_color; ?>!important"><?php the_sub_field("title"); ?></h3>
             <div style="color:<?php echo $text_color; ?>!important"><?php the_sub_field("text"); ?></div>
             <a href="<?php the_sub_field("button_link"); ?>"><button style="background-color:#B38F16!important"><?php the_sub_field("button_title"); ?></button></a>

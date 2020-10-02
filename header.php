@@ -32,9 +32,13 @@
 	wp_head();
 ?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://kit.fontawesome.com/d08277c8f7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 	jQuery(document).ready(function($) {
+		AOS.init();
+		
 		$('.scroll-posts').slick({
   			infinite: true,
   			slidesToShow: 4,

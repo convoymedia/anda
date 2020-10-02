@@ -13,7 +13,7 @@
                         ));
                         foreach ($recent_posts as $post) {
                             ?>
-                            <div class="post">
+                            <div class="post"  data-aos="fade-up">
                                 <a href="<?php echo get_permalink($post['ID']) ?>">
                                     <?php echo get_the_post_thumbnail($post['ID'], "recent_articles"); ?>
                                 </a>

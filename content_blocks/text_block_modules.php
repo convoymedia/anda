@@ -11,7 +11,7 @@
             while (have_rows("module")) {
                 the_row();
                 ?>
-                <div>
+                <div data-aos="fade-up">
                     <div class="img"><img src="<?php the_sub_field("image"); ?>" /></div>
                     <div class="div">
                         <h3><?php the_sub_field("title"); ?></h3>

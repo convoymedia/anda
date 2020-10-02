@@ -18,7 +18,7 @@
             <img src="<?php echo $image[0]; ?>" class="underlay-image" />
         </div>
     <?php } ?>
-    <div class="iltr-overlay">
+    <div class="iltr-overlay"  data-aos="fade-left">
     <?php if (get_sub_field("title")) { ?><h2><?php the_sub_field("title"); ?></h2><?php } ?>
         <?php the_sub_field("content"); ?>
         <?php if (get_sub_field("include_button")) { ?>

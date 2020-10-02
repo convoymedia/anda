@@ -1,4 +1,4 @@
-<div class="icon_left_text_right">
+<div class="icon_left_text_right" data-aos="fade-up">
     <div>
     <div class="empty"><!-- empty here for testing --></div>
     <div class="first">

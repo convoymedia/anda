@@ -1,4 +1,4 @@
-<div class="text_quote <?php the_sub_field("style"); ?>">
+<div class="text_quote <?php the_sub_field("style"); ?>" data-aos="fade-up">
     <div class="quotes">
         <?php
             if (have_rows("text")) {
